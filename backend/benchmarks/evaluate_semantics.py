@@ -9,6 +9,7 @@ parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[
 parser.add_argument('--model-dir',type=Path,required=True)
 parser.add_argument('--output',type=Path,required=True)
 args=parser.parse_args()
+args.model_dir=args.model_dir.resolve()
 sys.path.insert(0,str(args.root))
 from app.config import Settings
 from app.services.faq_embeddings import OnnxEncoder

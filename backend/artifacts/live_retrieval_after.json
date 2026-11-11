@@ -1,0 +1,2618 @@
+{
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "files": {
+      "model.onnx": "b941bf19f1f1283680f449fa6a7336bb5600bdcd5f84d10ddc5cd72218a0fd21",
+      "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+    }
+  },
+  "initialization_ms": 267.6102200002788,
+  "average_inference_ms": 3.698398590040597,
+  "p95_inference_ms": 5.130265799789413,
+  "peak_rss_mb": 149.67578125,
+  "overall": {
+    "n": 100,
+    "positive_n": 73,
+    "top1_accuracy": 0.9452054794520548,
+    "recall_at_3": 1.0,
+    "accepted": 59,
+    "precision": 1.0,
+    "false_accepts": 0,
+    "false_positive_rate": 0.0,
+    "unnecessary_abstentions": 0,
+    "abstention_rate": 0.07,
+    "gemini_rag_routes": 20,
+    "gemini_fallback_rate": 0.2,
+    "correct_local": 59
+  },
+  "held_out": {
+    "n": 49,
+    "positive_n": 33,
+    "top1_accuracy": 0.9696969696969697,
+    "recall_at_3": 1.0,
+    "accepted": 27,
+    "precision": 1.0,
+    "false_accepts": 0,
+    "false_positive_rate": 0.0,
+    "unnecessary_abstentions": 0,
+    "abstention_rate": 0.04081632653061224,
+    "gemini_rag_routes": 11,
+    "gemini_fallback_rate": 0.22448979591836735,
+    "correct_local": 27
+  },
+  "calibration": {
+    "n": 39,
+    "positive_n": 28,
+    "top1_accuracy": 0.8928571428571429,
+    "recall_at_3": 1.0,
+    "accepted": 21,
+    "precision": 1.0,
+    "false_accepts": 0,
+    "false_positive_rate": 0.0,
+    "unnecessary_abstentions": 0,
+    "abstention_rate": 0.1282051282051282,
+    "gemini_rag_routes": 9,
+    "gemini_fallback_rate": 0.23076923076923078,
+    "correct_local": 21
+  },
+  "results": [
+    {
+      "id": "Q001",
+      "question": "How long is the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_duration",
+      "resolved_query": "How long is the exam?",
+      "raw_top1_correct": true,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 5.4527890006284,
+      "false_accept": false
+    },
+    {
+      "id": "Q002",
+      "question": "What is the final examination duration?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_duration",
+      "resolved_query": "What is the final examination duration?",
+      "raw_top1_correct": true,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.400634000172431,
+      "false_accept": false
+    },
+    {
+      "id": "Q003",
+      "question": "How many minutes does the final last?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_duration",
+      "resolved_query": "How many minutes does the final last?",
+      "raw_top1_correct": true,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.6441450001802878,
+      "false_accept": false
+    },
+    {
+      "id": "Q004",
+      "question": "How much time is allotted for the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_duration",
+      "resolved_query": "How much time is allotted for the exam?",
+      "raw_top1_correct": true,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.973154000050272,
+      "false_accept": false
+    },
+    {
+      "id": "Q005",
+      "question": "What is the length of the proctored test?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_duration",
+      "resolved_query": "What is the length of the proctored test?",
+      "raw_top1_correct": false,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.8359199998012627,
+      "false_accept": false
+    },
+    {
+      "id": "Q006",
+      "question": "How long will my final exam take?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_duration",
+      "resolved_query": "How long will my final exam take?",
+      "raw_top1_correct": true,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.5313079997649766,
+      "false_accept": false
+    },
+    {
+      "id": "Q007",
+      "question": "When is the capstone due?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "capstone_deadline",
+      "resolved_query": "When is the capstone due?",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 2.9352130004554056,
+      "false_accept": false
+    },
+    {
+      "id": "Q008",
+      "question": "What\u2019s the product case deadline?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "capstone_deadline",
+      "resolved_query": "What\u2019s the product case deadline?",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "4c1a42f8-e17b-5676-a057-84eea6597e92",
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.7551499999608495,
+      "false_accept": false
+    },
+    {
+      "id": "Q009",
+      "question": "When must I hand in my project?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "capstone_deadline",
+      "resolved_query": "When must I hand in my project?",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.1670079997638823,
+      "false_accept": false
+    },
+    {
+      "id": "Q010",
+      "question": "What is the submission date for the capstone?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "capstone_deadline",
+      "resolved_query": "What is the submission date for the capstone?",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.9160189999165596,
+      "false_accept": false
+    },
+    {
+      "id": "Q011",
+      "question": "By when should the product case be submitted?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "capstone_deadline",
+      "resolved_query": "By when should the product case be submitted?",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.9091879998522927,
+      "false_accept": false
+    },
+    {
+      "id": "Q012",
+      "question": "When do we need to turn in the capstone case?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "capstone_deadline",
+      "resolved_query": "When do we need to turn in the capstone case?",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.566814000099839,
+      "false_accept": false
+    },
+    {
+      "id": "Q013",
+      "question": "How much to pass?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "passing",
+      "resolved_query": "How much to pass?",
+      "raw_top1_correct": true,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.3684170002743485,
+      "false_accept": false
+    },
+    {
+      "id": "Q014",
+      "question": "What are the course passing requirements?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "passing",
+      "resolved_query": "What are the course passing requirements?",
+      "raw_top1_correct": true,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.6350710006445297,
+      "false_accept": false
+    },
+    {
+      "id": "Q015",
+      "question": "How to pass?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "passing",
+      "resolved_query": "How to pass?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "2f8acbee-477d-54dc-b669-097e49bda588"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.2968899995466927,
+      "false_accept": false
+    },
+    {
+      "id": "Q016",
+      "question": "What do I need to earn the certificate?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "passing",
+      "resolved_query": "What do I need to earn the certificate?",
+      "raw_top1_correct": true,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "b09b5b2d-cf88-51be-b020-a46c7d2ab02d",
+        "e1d27d46-190c-5581-8096-582d32da53e3"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.8369509993572137,
+      "false_accept": false
+    },
+    {
+      "id": "Q017",
+      "question": "What marks are needed to clear DPM-101?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "passing",
+      "resolved_query": "What marks are needed to clear DPM-101?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e1d27d46-190c-5581-8096-582d32da53e3",
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.65091800015216,
+      "false_accept": false
+    },
+    {
+      "id": "Q018",
+      "question": "What are the conditions for passing?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "passing",
+      "resolved_query": "What are the conditions for passing?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.2057850003184285,
+      "false_accept": false
+    },
+    {
+      "id": "Q019",
+      "question": "Can I use notes?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_materials",
+      "resolved_query": "Can I use notes?",
+      "raw_top1_correct": true,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.0732879995412077,
+      "false_accept": false
+    },
+    {
+      "id": "Q020",
+      "question": "Are notes allowed in the final?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_materials",
+      "resolved_query": "Are notes allowed in the final?",
+      "raw_top1_correct": true,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.2140270004674676,
+      "false_accept": false
+    },
+    {
+      "id": "Q021",
+      "question": "May I consult my notes during the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_materials",
+      "resolved_query": "May I consult my notes during the exam?",
+      "raw_top1_correct": true,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "2f8acbee-477d-54dc-b669-097e49bda588"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.707369000039762,
+      "false_accept": false
+    },
+    {
+      "id": "Q022",
+      "question": "Is the final open book?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_materials",
+      "resolved_query": "Is the final open book?",
+      "raw_top1_correct": true,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.674780999972427,
+      "false_accept": false
+    },
+    {
+      "id": "Q023",
+      "question": "Are course notes permitted in the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_materials",
+      "resolved_query": "Are course notes permitted in the exam?",
+      "raw_top1_correct": true,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.39620799968543,
+      "false_accept": false
+    },
+    {
+      "id": "Q024",
+      "question": "Can I bring notes into the final examination?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_materials",
+      "resolved_query": "Can I bring notes into the final examination?",
+      "raw_top1_correct": true,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.10437800019281,
+      "false_accept": false
+    },
+    {
+      "id": "Q025",
+      "question": "How long is the course?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "course_duration",
+      "resolved_query": "How long is the course?",
+      "raw_top1_correct": true,
+      "top3": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.145996999592171,
+      "false_accept": false
+    },
+    {
+      "id": "Q026",
+      "question": "How many weeks does DPM-101 last?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "course_duration",
+      "resolved_query": "How many weeks does DPM-101 last?",
+      "raw_top1_correct": true,
+      "top3": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "4c1a42f8-e17b-5676-a057-84eea6597e92",
+        "051d8379-2490-5e68-9feb-360f8500bec4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.066581999722985,
+      "false_accept": false
+    },
+    {
+      "id": "Q027",
+      "question": "What is the course length?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "course_duration",
+      "resolved_query": "What is the course length?",
+      "raw_top1_correct": true,
+      "top3": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.5176580004190328,
+      "false_accept": false
+    },
+    {
+      "id": "Q028",
+      "question": "How long does the online program run?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "course_duration",
+      "resolved_query": "How long does the online program run?",
+      "raw_top1_correct": false,
+      "top3": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "4c1a42f8-e17b-5676-a057-84eea6597e92",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.622994000579638,
+      "false_accept": false
+    },
+    {
+      "id": "Q029",
+      "question": "When is the final exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_date",
+      "resolved_query": "When is the final exam?",
+      "raw_top1_correct": true,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.037486000721401,
+      "false_accept": false
+    },
+    {
+      "id": "Q030",
+      "question": "What day is the examination scheduled?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_date",
+      "resolved_query": "What day is the examination scheduled?",
+      "raw_top1_correct": true,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.179555999849981,
+      "false_accept": false
+    },
+    {
+      "id": "Q031",
+      "question": "When do we sit the proctored final?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_date",
+      "resolved_query": "When do we sit the proctored final?",
+      "raw_top1_correct": true,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.541922999829694,
+      "false_accept": false
+    },
+    {
+      "id": "Q032",
+      "question": "What is the final exam date and time?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_date",
+      "resolved_query": "What is the final exam date and time?",
+      "raw_top1_correct": true,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.9615760006199707,
+      "false_accept": false
+    },
+    {
+      "id": "Q033",
+      "question": "Can I miss one quiz?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "quiz_miss",
+      "resolved_query": "Can I miss one quiz?",
+      "raw_top1_correct": true,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.4946229998240597,
+      "false_accept": false
+    },
+    {
+      "id": "Q034",
+      "question": "How many weekly quizzes can I skip?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "quiz_miss",
+      "resolved_query": "How many weekly quizzes can I skip?",
+      "raw_top1_correct": true,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.050407999784511,
+      "false_accept": false
+    },
+    {
+      "id": "Q035",
+      "question": "What if I miss a weekly quiz?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "quiz_miss",
+      "resolved_query": "What if I miss a weekly quiz?",
+      "raw_top1_correct": true,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.666468000119494,
+      "false_accept": false
+    },
+    {
+      "id": "Q036",
+      "question": "Can I skip one weekly quiz without a penalty?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "quiz_miss",
+      "resolved_query": "Can I skip one weekly quiz without a penalty?",
+      "raw_top1_correct": true,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.105138999875635,
+      "false_accept": false
+    },
+    {
+      "id": "Q037",
+      "question": "Can I submit a quiz late?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "late_submission",
+      "resolved_query": "Can I submit a quiz late?",
+      "raw_top1_correct": false,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49"
+      ],
+      "top1_correct": false,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "intent_uncertain",
+      "inference_ms": 3.745474999959697,
+      "false_accept": false
+    },
+    {
+      "id": "Q038",
+      "question": "Are late capstone submissions accepted?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "late_submission",
+      "resolved_query": "Are late capstone submissions accepted?",
+      "raw_top1_correct": true,
+      "top3": [
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "intent_uncertain",
+      "inference_ms": 3.580861000045843,
+      "false_accept": false
+    },
+    {
+      "id": "Q039",
+      "question": "What if I hand in my project a day late?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "late_submission",
+      "resolved_query": "What if I hand in my project a day late?",
+      "raw_top1_correct": false,
+      "top3": [
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "top1_correct": false,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.942218000702269,
+      "false_accept": false
+    },
+    {
+      "id": "Q040",
+      "question": "Is there still a grace period for late work?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "late_submission",
+      "resolved_query": "Is there still a grace period for late work?",
+      "raw_top1_correct": true,
+      "top3": [
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.5657889993672143,
+      "false_accept": false
+    },
+    {
+      "id": "Q041",
+      "question": "How much does the verified track cost?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "fee",
+      "resolved_query": "How much does the verified track cost?",
+      "raw_top1_correct": true,
+      "top3": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "e665966d-599d-51cf-853c-995934a478f3",
+        "051d8379-2490-5e68-9feb-360f8500bec4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.9120480005294667,
+      "false_accept": false
+    },
+    {
+      "id": "Q042",
+      "question": "What is the certificate fee?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "fee",
+      "resolved_query": "What is the certificate fee?",
+      "raw_top1_correct": true,
+      "top3": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e1d27d46-190c-5581-8096-582d32da53e3"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.4484050001992728,
+      "false_accept": false
+    },
+    {
+      "id": "Q043",
+      "question": "How much must I pay for the verified certificate?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "fee",
+      "resolved_query": "How much must I pay for the verified certificate?",
+      "raw_top1_correct": true,
+      "top3": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e1d27d46-190c-5581-8096-582d32da53e3"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.113121999580471,
+      "false_accept": false
+    },
+    {
+      "id": "Q044",
+      "question": "What is the price of the verified track?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "fee",
+      "resolved_query": "What is the price of the verified track?",
+      "raw_top1_correct": true,
+      "top3": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "e665966d-599d-51cf-853c-995934a478f3",
+        "e1d27d46-190c-5581-8096-582d32da53e3"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.9545149993500672,
+      "false_accept": false
+    },
+    {
+      "id": "Q045",
+      "question": "What to study?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "overview",
+      "resolved_query": "What to study?",
+      "raw_top1_correct": false,
+      "top3": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "4c1a42f8-e17b-5676-a057-84eea6597e92"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "local_evidence",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.7559819993475685,
+      "false_accept": false
+    },
+    {
+      "id": "Q046",
+      "question": "What will I learn in DPM-101?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "overview",
+      "resolved_query": "What will I learn in DPM-101?",
+      "raw_top1_correct": true,
+      "top3": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+        "4c1a42f8-e17b-5676-a057-84eea6597e92",
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "local_evidence",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.105580000214104,
+      "false_accept": false
+    },
+    {
+      "id": "Q047",
+      "question": "What topics does this course cover?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "overview",
+      "resolved_query": "What topics does this course cover?",
+      "raw_top1_correct": true,
+      "top3": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "local_evidence",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.5174580007151235,
+      "false_accept": false
+    },
+    {
+      "id": "Q048",
+      "question": "What is the syllabus?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "test",
+      "intent": "overview",
+      "resolved_query": "What is the syllabus?",
+      "raw_top1_correct": false,
+      "top3": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "local_evidence",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.1636330004403135,
+      "false_accept": false
+    },
+    {
+      "id": "Q049",
+      "question": "How is the course graded?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "weights",
+      "resolved_query": "How is the course graded?",
+      "raw_top1_correct": false,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.314325999781431,
+      "false_accept": false
+    },
+    {
+      "id": "Q050",
+      "question": "What are the assessment weights?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "weights",
+      "resolved_query": "What are the assessment weights?",
+      "raw_top1_correct": true,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.4271929998794803,
+      "false_accept": false
+    },
+    {
+      "id": "Q051",
+      "question": "How much does each assessment count?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "weights",
+      "resolved_query": "How much does each assessment count?",
+      "raw_top1_correct": true,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.599769999709679,
+      "false_accept": false
+    },
+    {
+      "id": "Q052",
+      "question": "What is the grading breakdown?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "weights",
+      "resolved_query": "What is the grading breakdown?",
+      "raw_top1_correct": true,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.3774700004869374,
+      "false_accept": false
+    },
+    {
+      "id": "Q053",
+      "question": "Can I take the exam on an iPad?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "technical",
+      "resolved_query": "Can I take the exam on an iPad?",
+      "raw_top1_correct": true,
+      "top3": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 4.160901999966882,
+      "false_accept": false
+    },
+    {
+      "id": "Q054",
+      "question": "Can I use my phone for the proctored exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "technical",
+      "resolved_query": "Can I use my phone for the proctored exam?",
+      "raw_top1_correct": false,
+      "top3": [
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "2f8acbee-477d-54dc-b669-097e49bda588"
+      ],
+      "top1_correct": false,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.9644110001972876,
+      "false_accept": false
+    },
+    {
+      "id": "Q055",
+      "question": "What equipment is needed for the final?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "technical",
+      "resolved_query": "What equipment is needed for the final?",
+      "raw_top1_correct": false,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "top1_correct": false,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.335367000545375,
+      "false_accept": false
+    },
+    {
+      "id": "Q056",
+      "question": "What are the final exam technical requirements?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "technical",
+      "resolved_query": "What are the final exam technical requirements?",
+      "raw_top1_correct": true,
+      "top3": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.3280560001003323,
+      "false_accept": false
+    },
+    {
+      "id": "Q057",
+      "question": "How long does the exam take?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "exam_duration",
+      "resolved_query": "How long does the exam take?",
+      "raw_top1_correct": true,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.6909049995301757,
+      "false_accept": false
+    },
+    {
+      "id": "Q058",
+      "question": "When is the capstone case due?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "capstone_deadline",
+      "resolved_query": "When is the capstone case due?",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.312593000373454,
+      "false_accept": false
+    },
+    {
+      "id": "Q059",
+      "question": "What is the minimum overall score needed for the Verified Certificate?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "passing",
+      "resolved_query": "What is the minimum overall score needed for the Verified Certificate?",
+      "raw_top1_correct": true,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "e1d27d46-190c-5581-8096-582d32da53e3"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 4.097848000128579,
+      "false_accept": false
+    },
+    {
+      "id": "Q060",
+      "question": "Can I use my notes during the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "exam_materials",
+      "resolved_query": "Can I use my notes during the exam?",
+      "raw_top1_correct": true,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "2f8acbee-477d-54dc-b669-097e49bda588"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.7773129997731303,
+      "false_accept": false
+    },
+    {
+      "id": "Q061",
+      "question": "How long does the Digital Product Management (DPM-101) course last?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "course_duration",
+      "resolved_query": "How long does the Digital Product Management (DPM-101) course last?",
+      "raw_top1_correct": true,
+      "top3": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "4c1a42f8-e17b-5676-a057-84eea6597e92",
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 5.126023999764584,
+      "false_accept": false
+    },
+    {
+      "id": "Q062",
+      "question": "When is the final exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "exam_date",
+      "resolved_query": "When is the final exam?",
+      "raw_top1_correct": true,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.166346999933012,
+      "false_accept": false
+    },
+    {
+      "id": "Q063",
+      "question": "What happens if I miss a weekly quiz?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "quiz_miss",
+      "resolved_query": "What happens if I miss a weekly quiz?",
+      "raw_top1_correct": true,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.42774399996415,
+      "false_accept": false
+    },
+    {
+      "id": "Q064",
+      "question": "Can I submit the capstone case late?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "late_submission",
+      "resolved_query": "Can I submit the capstone case late?",
+      "raw_top1_correct": true,
+      "top3": [
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 4.16120200043224,
+      "false_accept": false
+    },
+    {
+      "id": "Q065",
+      "question": "How much does the Verified Certificate Track for Digital Product Management (DPM-101) cost?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "fee",
+      "resolved_query": "How much does the Verified Certificate Track for Digital Product Management (DPM-101) cost?",
+      "raw_top1_correct": true,
+      "top3": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "e1d27d46-190c-5581-8096-582d32da53e3",
+        "e665966d-599d-51cf-853c-995934a478f3"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 5.63978600075643,
+      "false_accept": false
+    },
+    {
+      "id": "Q066",
+      "question": "What subjects are included in the Digital Product Management (DPM-101) curriculum?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "overview",
+      "resolved_query": "What subjects are included in the Digital Product Management (DPM-101) curriculum?",
+      "raw_top1_correct": true,
+      "top3": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "4c1a42f8-e17b-5676-a057-84eea6597e92"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": null,
+      "route": "local_evidence",
+      "reason": "exact_formulation",
+      "inference_ms": 5.210860000261164,
+      "false_accept": false
+    },
+    {
+      "id": "Q067",
+      "question": "How much is each part of the assessment worth?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "weights",
+      "resolved_query": "How much is each part of the assessment worth?",
+      "raw_top1_correct": true,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.9261140000235173,
+      "false_accept": false
+    },
+    {
+      "id": "Q068",
+      "question": "Can I take the exam on a tablet?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "technical",
+      "resolved_query": "Can I take the exam on a tablet?",
+      "raw_top1_correct": true,
+      "top3": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+      "route": "faq",
+      "reason": "exact_formulation",
+      "inference_ms": 3.7642939996658242,
+      "false_accept": false
+    },
+    {
+      "id": "Q069",
+      "question": "When is it?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "contextual",
+      "history": [
+        "When is the capstone due?"
+      ],
+      "split": "test",
+      "intent": "capstone_deadline",
+      "resolved_query": "When is it?\nReferenced subject: capstone deadline.",
+      "raw_top1_correct": true,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.0238790006696945,
+      "false_accept": false
+    },
+    {
+      "id": "Q070",
+      "question": "When is it?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "contextual",
+      "history": [
+        "How long is the final exam?"
+      ],
+      "split": "test",
+      "intent": "exam_date",
+      "resolved_query": "When is it?\nReferenced assessment: final exam.\nReferenced subject: final exam date.",
+      "raw_top1_correct": true,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 6.0616320006374735,
+      "false_accept": false
+    },
+    {
+      "id": "Q071",
+      "question": "Can I skip one?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "contextual",
+      "history": [
+        "How many weekly quizzes are there?"
+      ],
+      "split": "test",
+      "intent": "quiz_miss",
+      "resolved_query": "Can I skip one?\nReferenced subject: weekly quizzes.",
+      "raw_top1_correct": true,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.841570999815303,
+      "false_accept": false
+    },
+    {
+      "id": "Q072",
+      "question": "How much?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "contextual",
+      "history": [
+        "What is the verified certificate track?"
+      ],
+      "split": "test",
+      "intent": "fee",
+      "resolved_query": "How much?\nReferenced subject: certificate track fee.",
+      "raw_top1_correct": true,
+      "top3": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 4.61247099974571,
+      "false_accept": false
+    },
+    {
+      "id": "Q073",
+      "question": "And how long?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "contextual",
+      "history": [
+        "When is the final exam?"
+      ],
+      "split": "test",
+      "intent": "exam_duration",
+      "resolved_query": "What is the final exam duration?",
+      "raw_top1_correct": true,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": true,
+      "recall3": true,
+      "accepted_faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "route": "faq",
+      "reason": "intent_calibrated_match",
+      "inference_ms": 3.5815230003208853,
+      "false_accept": false
+    },
+    {
+      "id": "Q074",
+      "question": "When is it?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "When is it?",
+      "raw_top1_correct": false,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "dbd03385-52d9-54f9-8375-ea1162c851b4"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "clarification",
+      "reason": "policy",
+      "inference_ms": 2.7718709998225677,
+      "false_accept": false
+    },
+    {
+      "id": "Q075",
+      "question": "Can I skip one?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Can I skip one?",
+      "raw_top1_correct": false,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "8c13c058-af76-5b00-9fba-45e0d66d3c49"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "clarification",
+      "reason": "policy",
+      "inference_ms": 3.2252139999400242,
+      "false_accept": false
+    },
+    {
+      "id": "Q076",
+      "question": "How much?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "How much?",
+      "raw_top1_correct": false,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "clarification",
+      "reason": "policy",
+      "inference_ms": 2.4215309995270218,
+      "false_accept": false
+    },
+    {
+      "id": "Q077",
+      "question": "What about it?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "What about it?",
+      "raw_top1_correct": false,
+      "top3": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "f3162ddd-d2f9-5640-8e9f-62a960669bda"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "clarification",
+      "reason": "policy",
+      "inference_ms": 2.506517999790958,
+      "false_accept": false
+    },
+    {
+      "id": "Q078",
+      "question": "And how long?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "And how long?",
+      "raw_top1_correct": false,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "clarification",
+      "reason": "policy",
+      "inference_ms": 2.351177000491589,
+      "false_accept": false
+    },
+    {
+      "id": "Q079",
+      "question": "How do I get a refund?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "How do I get a refund?",
+      "raw_top1_correct": false,
+      "top3": [
+        "f3162ddd-d2f9-5640-8e9f-62a960669bda",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "051d8379-2490-5e68-9feb-360f8500bec4"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "abstention",
+      "reason": "unproven_equivalence",
+      "inference_ms": 2.8755559997080127,
+      "false_accept": false
+    },
+    {
+      "id": "Q080",
+      "question": "Who is the instructor?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Who is the instructor?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.8503119994857116,
+      "false_accept": false
+    },
+    {
+      "id": "Q081",
+      "question": "How many questions are on the final exam?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "How many questions are on the final exam?",
+      "raw_top1_correct": false,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 5.261543999949936,
+      "false_accept": false
+    },
+    {
+      "id": "Q082",
+      "question": "Does this course teach SQL indexing?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Does this course teach SQL indexing?",
+      "raw_top1_correct": false,
+      "top3": [
+        "f3162ddd-d2f9-5640-8e9f-62a960669bda",
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "abstention",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.1967220002115937,
+      "false_accept": false
+    },
+    {
+      "id": "Q083",
+      "question": "Who won the cricket match last night?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "Who won the cricket match last night?",
+      "raw_top1_correct": false,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "abstention",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.284311999777856,
+      "false_accept": false
+    },
+    {
+      "id": "Q084",
+      "question": "Can I retake the exam?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Can I retake the exam?",
+      "raw_top1_correct": false,
+      "top3": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "abstention",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.4022570007437025,
+      "false_accept": false
+    },
+    {
+      "id": "Q085",
+      "question": "Are scientific calculators allowed?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "Are scientific calculators allowed?",
+      "raw_top1_correct": false,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "abstention",
+      "reason": "unproven_equivalence",
+      "inference_ms": 2.809687000080885,
+      "false_accept": false
+    },
+    {
+      "id": "Q086",
+      "question": "Can I use an AI calculator?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Can I use an AI calculator?",
+      "raw_top1_correct": false,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.809439999713504,
+      "false_accept": false
+    },
+    {
+      "id": "Q087",
+      "question": "Can I use notes in the quizzes?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "Can I use notes in the quizzes?",
+      "raw_top1_correct": false,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.657945999293588,
+      "false_accept": false
+    },
+    {
+      "id": "Q088",
+      "question": "How long is the capstone presentation?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "How long is the capstone presentation?",
+      "raw_top1_correct": false,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.8483980006276397,
+      "false_accept": false
+    },
+    {
+      "id": "Q089",
+      "question": "What is the maximum exam score?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "What is the maximum exam score?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "abstention",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.263681000134966,
+      "false_accept": false
+    },
+    {
+      "id": "Q090",
+      "question": "Can I get extra time for the exam?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Can I get extra time for the exam?",
+      "raw_top1_correct": false,
+      "top3": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.3551870001247153,
+      "false_accept": false
+    },
+    {
+      "id": "Q091",
+      "question": "Do I not have to pass the exam?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "negation",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "Do I not have to pass the exam?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "2f8acbee-477d-54dc-b669-097e49bda588",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.3004859997163294,
+      "false_accept": false
+    },
+    {
+      "id": "Q092",
+      "question": "Can I pass with 70% overall and 35% in the final?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "conditional",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Can I pass with 70% overall and 35% in the final?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "policy",
+      "reason": "policy",
+      "inference_ms": 4.375039000478864,
+      "false_accept": false
+    },
+    {
+      "id": "Q093",
+      "question": "Can I pass with 70% overall and 45% in the final?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "conditional",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "Can I pass with 70% overall and 45% in the final?",
+      "raw_top1_correct": false,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "policy",
+      "reason": "policy",
+      "inference_ms": 4.2756120001286035,
+      "false_accept": false
+    },
+    {
+      "id": "Q094",
+      "question": "What was the passing score in January 2026?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "What was the passing score in January 2026?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "policy",
+      "reason": "policy",
+      "inference_ms": 3.382617999704962,
+      "false_accept": false
+    },
+    {
+      "id": "Q095",
+      "question": "What was the old capstone deadline?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "What was the old capstone deadline?",
+      "raw_top1_correct": false,
+      "top3": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "5fa08d21-c200-5991-a785-074792b838aa",
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "policy",
+      "reason": "policy",
+      "inference_ms": 2.991586999996798,
+      "false_accept": false
+    },
+    {
+      "id": "Q096",
+      "question": "What is the overall passing threshold?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "What is the overall passing threshold?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "intent_uncertain",
+      "inference_ms": 2.910116999373713,
+      "false_accept": false
+    },
+    {
+      "id": "Q097",
+      "question": "What is the final-exam passing threshold?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "What is the final-exam passing threshold?",
+      "raw_top1_correct": false,
+      "top3": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "intent_uncertain",
+      "inference_ms": 3.6547509998854366,
+      "false_accept": false
+    },
+    {
+      "id": "Q098",
+      "question": "Can I use a physical calculator?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "scope",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Can I use a physical calculator?",
+      "raw_top1_correct": false,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.404140000384359,
+      "false_accept": false
+    },
+    {
+      "id": "Q099",
+      "question": "Can I use AI tools?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "scope",
+      "history": [],
+      "split": "calibration",
+      "intent": null,
+      "resolved_query": "Can I use AI tools?",
+      "raw_top1_correct": false,
+      "top3": [
+        "c75d66f3-ca34-5315-8580-516f4f624533",
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "abstention",
+      "reason": "unproven_equivalence",
+      "inference_ms": 3.064444999836269,
+      "false_accept": false
+    },
+    {
+      "id": "Q100",
+      "question": "Do I need both 60% overall and 40% in the final?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "conditional",
+      "history": [],
+      "split": "test",
+      "intent": null,
+      "resolved_query": "Do I need both 60% overall and 40% in the final?",
+      "raw_top1_correct": false,
+      "top3": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "e33bb2ce-4301-527d-b764-a19dedd40b4c"
+      ],
+      "top1_correct": false,
+      "recall3": false,
+      "accepted_faq_id": null,
+      "route": "gemini_rag",
+      "reason": "unproven_equivalence",
+      "inference_ms": 4.213189000438433,
+      "false_accept": false
+    }
+  ],
+  "limits": "Offline routing evaluation. Gemini RAG routes are required call opportunities, not live calls or judged Gemini answers. FAQ snapshot loaded from reviewed artifact, not claimed active in production. One warm inference per query; process RSS includes Python, index and ONNX. Model comparisons retain original MiniLM acceptance calibration, so compare ranking metrics for alternatives, not acceptance rates."
+}
