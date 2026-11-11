@@ -1,0 +1,1214 @@
+{
+  "export_date": "2026-11-11",
+  "format": "Markdown rendering of actual shared-session content; no rewriting of message text",
+  "sessions": [
+    {
+      "markdown_file": "01-helpdesk-bot.md",
+      "title": "HelpDesk bot",
+      "source_url": "https://chatgpt.com/s/cx_6af4396eee94819190774ba87dcf6075",
+      "source_response_sha256": "627c4be53b9c1aa8500561bb0f35de8601e5976d2454f55e576ebcf9aeceb243",
+      "markdown_sha256": "b38dc61eac2cdf258b963c9cdb805e1d0673bc85bc1192b60349861b78148ebb",
+      "counts": {
+        "userMessage": 35,
+        "agentMessage": 72,
+        "fileChange": 30
+      },
+      "scope": "Entire supplied shared-thread item sequence, including visible assistant updates and file-change diffs; image references preserved. This snapshot ends at the user question about which session would be restored.",
+      "message_text_hashes": [
+        {
+          "role": "User",
+          "sha256_utf8": "965c2376309b426053682c6ce801c399d80d89fc7c26bb32e68c7165a5b71c6e",
+          "characters": 18
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "17524fa2a20d6b5e50a2424d8a7c3c52c720cffcd9ff8b22c51a27814bd75ca4",
+          "characters": 549
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "3c3bdd5b8f5ce9f53681dcf09155dec4dc3ba235f9dd918e8775b2b5ce8e2342",
+          "characters": 169
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "d3da902329bdf093345b5d324fad030b0ab045d8712350292d24b1d3aad5d3d3",
+          "characters": 763
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "d8a3b4e8742a8020e83ad30661ed2bc354dff89185b533e75c754486f4243d80",
+          "characters": 313
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
+          "characters": 3
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "daa124197085f082ae7a93ee3887f5c551ca92631c8ab2fb43804c19531d5ecb",
+          "characters": 137
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "0c9cb1d661c73692499e6ca065701b5fe309557c539eb5db9bd5148499107d55",
+          "characters": 1210
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "2415502c6421e41ed51d83e8a4f444d39247c4d01c3adb238f96cf53535537ef",
+          "characters": 101
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "4891a00bb1ca143aa6440246c9f4441e1e2eef0507197ed88f61604386d6e69b",
+          "characters": 93
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "48e323f634b88073e53a65e31ab6314a9e8e52149a835b463ae9a53961d5c11a",
+          "characters": 182
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "dd77c7393cf8dfa97bf26fdc17f94373305732bc7ba7cf2c3b74f4473a6f2ad2",
+          "characters": 332
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "e51c2175e258e30232b180bd43a327dd7c95af60c6d6e0133bffabc64bd2d524",
+          "characters": 151
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "5d00db88771cb8ca2328e33bc2a8df54e4222bc937de2cdfe0b021e0e6489e96",
+          "characters": 619
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "2b84d3d7d117cfc349f7d3fea44a44e3c900df0c3ad1214ba043ee83db7a04b5",
+          "characters": 7398
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "c43793fa8557ca6efb126133cd0f994fc6d0848fcdbae4d628f6ec46ff431dd9",
+          "characters": 207
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "1f21b9396a5f7cc706547f792c7dcba9c61b6e3338c08fbab32084f74559cb48",
+          "characters": 567
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "e6d7c9bbb267d336b6d5846eab534122b813a0687a4f0afb1af459bf65f0ead8",
+          "characters": 63
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "147f8e4aacc48694781073598154136c002da30fed6337adb5e8d5a033b595cc",
+          "characters": 68
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "f6b23cc2a978dfa342cb9b06edb139bdbd99a30cb1232d6d8ad486842257015f",
+          "characters": 62
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "8191400e652b08545f4ea9b8d7a383c853887fc8f213527930d70c68987421b6",
+          "characters": 475
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "af1428a6758c3356fd811fea180cae461da0e8e2e8241675f68955acda6c3cd4",
+          "characters": 47
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "281f8bbf5056fb19eec2750d4f5be15959cc1074edb7ff866f75d467c8d2d09d",
+          "characters": 60
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "147f8e4aacc48694781073598154136c002da30fed6337adb5e8d5a033b595cc",
+          "characters": 68
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5d6c892c04744e70c66db267fd0fce8bd786b611dfac5814325edc3490c4211f",
+          "characters": 71
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d50df97cd5a6493b398a28523a4e9886395396a814e860d0b11c6dc0e705e47a",
+          "characters": 61
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5edbf905cb748e183f01389249ca01e1f9602eda6d2107bebe1c05954206280e",
+          "characters": 60
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "922273ef373fb8d02b6bf5d75eeea51d824408cf041ed15c11e5bb344b30f12e",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d02a7130ee8b864972b1b5ad455003226640991c8d3c1cd3cf1fa05f615c03da",
+          "characters": 58
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5d6c892c04744e70c66db267fd0fce8bd786b611dfac5814325edc3490c4211f",
+          "characters": 71
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "c5333d248beb54eb9b49dc7d64f9c3916d158d83750777ab893760b2806737fa",
+          "characters": 62
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "147f8e4aacc48694781073598154136c002da30fed6337adb5e8d5a033b595cc",
+          "characters": 68
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "8eefda23e06e3b33637112e49690a4f8965941e3debd37eac06f3ec2b3b626c5",
+          "characters": 64
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "ba806898a0c2b09bca8a47741d5b64ef26c02fc9f227ec8c0b15d743bda2e0d4",
+          "characters": 61
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "e632f31ef60f74fa6de24fcb5523d73475aa1326613f439db75d912614df4e69",
+          "characters": 483
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5c2e532d4d0f68802581bc3a7c4af6208e811dbe42bf9f0c0fbe2a3805e0f55a",
+          "characters": 57
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "922273ef373fb8d02b6bf5d75eeea51d824408cf041ed15c11e5bb344b30f12e",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "147f8e4aacc48694781073598154136c002da30fed6337adb5e8d5a033b595cc",
+          "characters": 68
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d420ccefbd4a2149089f2978aac418dcb7d65c3773d373b086a9701359aadda1",
+          "characters": 69
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "8eefda23e06e3b33637112e49690a4f8965941e3debd37eac06f3ec2b3b626c5",
+          "characters": 64
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "6a6cb59b8ede5c944b7f0d92fc2ed24acb26f7b9ae37eff5cbed7e27cc26ef01",
+          "characters": 53
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "b3ca30a2297e1b1e11732e25f12530c4d0ffe8f4cb5d4e522053ee144ac0d8a0",
+          "characters": 54
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "3fc4c0b8f97cbd9f7c13309fb0dd8d82249be5b4ab58ae5c91badf23a96efd87",
+          "characters": 460
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "922273ef373fb8d02b6bf5d75eeea51d824408cf041ed15c11e5bb344b30f12e",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "e6d7c9bbb267d336b6d5846eab534122b813a0687a4f0afb1af459bf65f0ead8",
+          "characters": 63
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d420ccefbd4a2149089f2978aac418dcb7d65c3773d373b086a9701359aadda1",
+          "characters": 69
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "69635cc42d1b3ba40e9e80884b1f96ba8a147eedcd24d7fc636354d1a311065f",
+          "characters": 64
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d420ccefbd4a2149089f2978aac418dcb7d65c3773d373b086a9701359aadda1",
+          "characters": 69
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "f2965549c9ccbb66ba83b9feae012e2d2eb369295f2e1297c33954759c0893f7",
+          "characters": 427
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "8eefda23e06e3b33637112e49690a4f8965941e3debd37eac06f3ec2b3b626c5",
+          "characters": 64
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5d6c892c04744e70c66db267fd0fce8bd786b611dfac5814325edc3490c4211f",
+          "characters": 71
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d420ccefbd4a2149089f2978aac418dcb7d65c3773d373b086a9701359aadda1",
+          "characters": 69
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "62703c4adf0723e65edcaa2c35953ffad00d4fd4923abb8f4c7fcfaea235d303",
+          "characters": 444
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "5ad3cb326206ca5d7ddff9725378a355d7eddd687ec4c09b74f1c267950cdd15",
+          "characters": 345
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d420ccefbd4a2149089f2978aac418dcb7d65c3773d373b086a9701359aadda1",
+          "characters": 69
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "0419b4db5b0fd196f62c98efa7b21b2212d5d4454246f6eb2a502a6d4be48c8b",
+          "characters": 65
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "6a4862dd3689ec17d06525da53e90ec4b9d14f0f0612045b3c9019632c217199",
+          "characters": 1034
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "a364b9f20d81de519e8c227dc9da162b8fd195ca202f43155134d4184476d172",
+          "characters": 25
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "3b36eb53626fb19831cc39fc21fa74247a5044697364a2a1694d757611e15ed8",
+          "characters": 112
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "c06a63efee673a0b08cbb68de09fcb49f5807a544c82d88c49f393f724bf4f26",
+          "characters": 283
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "1f973493c2e5437c4c3dac0fc066afa1810bedec7f9abfd18a49f96ba462ab3d",
+          "characters": 354
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "b228ea4a6df62a2e5484191e04d9255233966d9d1ada7dad569f63c5384a0ae9",
+          "characters": 479
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "bdb26e0ffe69cf098ed01ccae2ff244678c9a3a356a362d10a690c9a7bdc0caf",
+          "characters": 296
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "1f82f0f8acefa146dfb764530003fc98a1fcf0243ae5f1b09561ba7087b84535",
+          "characters": 375
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "366505ef78347ff4f2972a1127cfad070f608846d38dd0c003c584b0a40f83bd",
+          "characters": 387
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "e4baa52ee56e4eb4ea040316a33aeab76a72fabbc0502f24f9aae1092e685c0e",
+          "characters": 195
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "6dd8aa5e2bb12393c8b5fa45229c55928f84b9a337dd4f9646a55b4ff88c9afd",
+          "characters": 342
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "fe86e785ef1cd0f54b700d549825aff2f6b0c6e627690422b4324f117ca3c7d9",
+          "characters": 694
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "0f560983a3c33355a6b9d423f9a4365454383967f65af5182481f859307e33d6",
+          "characters": 22
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "ccc2bf812501961546690d1fde026ac41a5b29316ff52fc185e5fbc6b20d9e42",
+          "characters": 391
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "48f273a03b522f42e7611a68b35075c09cb5be10096637a4229ca23c929ab2ea",
+          "characters": 310
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "e2708ac43ee53cfa6a286eb312dfb2e0370aa845bf23fd1ecb451857ce86eb35",
+          "characters": 172
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "e349d2d22fe4645aac6d70658e60d7b1a1436f5c4b5b72b0be1001bdbec4c5c6",
+          "characters": 456
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "f9884701b96433c81acbcaea4091066952e0604b72e4ded276a41b175890a6ae",
+          "characters": 469
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "81b88ce9b22f1aaaafd679f386fd0d528bb49312621a50183e27e48ebf6cd295",
+          "characters": 291
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5edbf905cb748e183f01389249ca01e1f9602eda6d2107bebe1c05954206280e",
+          "characters": 60
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "e6d7c9bbb267d336b6d5846eab534122b813a0687a4f0afb1af459bf65f0ead8",
+          "characters": 63
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "900236ec4dfec3e2b56853f67985a41811846b2e56df4ed7b07c61a152dd41a7",
+          "characters": 70
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d02a7130ee8b864972b1b5ad455003226640991c8d3c1cd3cf1fa05f615c03da",
+          "characters": 58
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "900236ec4dfec3e2b56853f67985a41811846b2e56df4ed7b07c61a152dd41a7",
+          "characters": 70
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5184cad55b117fdc957fb8e2eafaad56ae5991abbb80ea977ea203a5bac2ec13",
+          "characters": 68
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "c938f4cdc64adc266a64c027b9767ea751b5d72a57b87a1332c5bf5553fcbb62",
+          "characters": 409
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a28db0d4ab3495666c543d0707e83ce0a0467582abe8cf50cf8798b80f71fb5b",
+          "characters": 65
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "6a6cb59b8ede5c944b7f0d92fc2ed24acb26f7b9ae37eff5cbed7e27cc26ef01",
+          "characters": 53
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "ca9c41fa6f7492f5753d2fb85642d6d451d5be794f9129dcffe39bcaba3f994e",
+          "characters": 62
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "d02a7130ee8b864972b1b5ad455003226640991c8d3c1cd3cf1fa05f615c03da",
+          "characters": 58
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "a917efdd46132639be9ed536136cc47a9f8491b2a991e16a36556bf86654881a",
+          "characters": 54
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "09c563c7862b93436bea2d3b3b7ded3128f319f3ffbacfb06bd685abfd96101c",
+          "characters": 301
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "f963a00f4d1c607e7cef49a34ad48be62c33d5afab59f06d178022668a3c3838",
+          "characters": 64
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "831960f9457962e0997ee707a9fcd10f4f046a6a478e9eaabf1017cbec4f0d7c",
+          "characters": 59
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "e6d7c9bbb267d336b6d5846eab534122b813a0687a4f0afb1af459bf65f0ead8",
+          "characters": 63
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "831960f9457962e0997ee707a9fcd10f4f046a6a478e9eaabf1017cbec4f0d7c",
+          "characters": 59
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "4add84cb6a1f24b19136c9a1def9aad6f6f1135d4d74737987c01022d60929a9",
+          "characters": 224
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "5042fbee3b73e205485ef9a5c65c1db4637c3da6afe23460b79e746f0cef9092",
+          "characters": 17
+        },
+        {
+          "role": "File change",
+          "sha256_utf8": "8eefda23e06e3b33637112e49690a4f8965941e3debd37eac06f3ec2b3b626c5",
+          "characters": 64
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "5ff6f72dd75e25f4a2a583ec26408a6ab5fc1ad7d3c123e9f811c983dc707479",
+          "characters": 236
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "b0a4e4a26d990175abf834d90fd9f0d1ade424642452fb0c87eeeef59d1851f1",
+          "characters": 187
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "c15ee5da0e8fa23610030756cf90c4fd1c6f689de232a534b908e684c8dd740a",
+          "characters": 553
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "ac5f51d3cd6bdcb8957df306344f2be3676f879223c2fd99c27cf50fe151a14d",
+          "characters": 330
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "f369ae7f27fb140cd63789854b3800ab85f71d8ecbea5f5049143bc8780d5ee1",
+          "characters": 92
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "6deb9e864ea6221f8d2eadc1b2839fadefa3d42ea305706f02b85c7f6de4579e",
+          "characters": 400
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "c08583ba1e7931431cc99fd3c4b53f98bed1759acec7fb1546afb7aa5bcf9e37",
+          "characters": 56
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "492b01156e25a579a251128d1e7626bc21d8ed010f8233e388fbc21d83a7aea0",
+          "characters": 1471
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "b5fc60132dacdf6039cc551fb099ac2c00fa17601992c576b29766ad85d74c63",
+          "characters": 81
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "cd6a56f5a4cb29bed75e84a4be1d461de604aeb5c72ab8c6339d8be400227d6a",
+          "characters": 1495
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "de0b854d749979a5ae7edbdcc2a7a7e604abecc3674795634773262bddd7af83",
+          "characters": 27
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "b1757deecf3982ee4b3e0a4eee09219378156c2777cbe3c1832d2da925512aff",
+          "characters": 1488
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "4396152d01b2c85e72656ada3644728a95f00634c689f729ba308d0d01baa604",
+          "characters": 47
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "226d059214dd43ee8efd46713c5710c7f0541d4ac0fe644ad7cab282aa49614d",
+          "characters": 892
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "128482331a6aa0cbdce96c72ae940bdde436777f009376e410819937a1eccd82",
+          "characters": 21
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "f3be8951461129e105da1f2dc0299d28f6407942d9e8c9a46176f0e02b719b0d",
+          "characters": 1587
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "a9e833c5156c5d134dace0636ea81c362f027a5852a02ac29ff7af2273de0f86",
+          "characters": 151
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "8f556ed9186fff2854add2a1324c8b4ff7840c60ef5d33afb0cb7d748f7381b2",
+          "characters": 214
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "d15a3ddfed05414356341b8de66bee2a7369102715346378bba6463cf3acedfc",
+          "characters": 151
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "5f0254caba96d0ce3449e4c73715b504a6a395fe5973fd4bf4b84014773552cd",
+          "characters": 684
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "80c68d17610bde1bd35b6adc810311b87fbd755a722d56561de02bde0b8c4a84",
+          "characters": 580
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "bf53f4b71cebb3379e5dc93bd0c3d8a16409291b5119714678c95eacce587742",
+          "characters": 729
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "c3f818f721fa0ecd325f340442e02238430a43b4d884cb9687c77b5600cad60d",
+          "characters": 18
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "6d9bc032b02591e97b79dff50f1f84a522bd794356e9db7a932704c0bbcb8d5b",
+          "characters": 635
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "1f234a423f0c251314a17b1f95fb163089d243fb382a78d7aed3c955907e9386",
+          "characters": 67
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "b0decaaac38939ee64775318a0e39d9697b55e0617e556970f8e5f33459f230b",
+          "characters": 989
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "c5d2ae3fa8ecded698c0194844e84ea700528bc11980bb6ec28a185381e9be00",
+          "characters": 48
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "72bb4d7322fe26343f8d70708644e043d2766c6949fdb3319f826b01a9ca184d",
+          "characters": 45
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "9822b2bc9c234b59c47b782635c3a88c6cb5eeeabee2322776445dce02a9c589",
+          "characters": 796
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "460ffaccc2822833532d56c367532ecb2b4dc7ec251749c1f256aca14d1759ff",
+          "characters": 99
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "d6a3ad3c34253b5f0b32a41d25f1dd42dc79847684fc5e9799c73173f057a531",
+          "characters": 1630
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "ee4e7be3fdc9d15007ab52c27ee03e04d968b6f00a98800dc1deff820458c119",
+          "characters": 40
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "654ea5200ce38d7755660ad819643f989c45e4ab26adcf17727b1df22765893c",
+          "characters": 705
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "9d6a9ad9dd2c9150a76de91c578376c3332b7420097f29db2bb9471ee9d6d78b",
+          "characters": 43
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "317ee39196d34d8483359ccff430eb748ac7876970316bf639b1d34f431b87f0",
+          "characters": 139
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "d26cf9d7638b63a4f5f15871b25c938e3f89b430af9f8b1ac7f63fc565a7e1a8",
+          "characters": 341
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "cf7ce5a1dc0554eb40e096d6753b7582788f0d91ae58e3e469c8fadfff947618",
+          "characters": 67
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "88f7168ee1428a48e75be7c9f86ed0504355e0f8344c81a405fc701c0d5a317e",
+          "characters": 102
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "873c6eb5a3245e0c3d228e05f4da803ff0efad79f7c62cbb3e0f48d4dbd98c45",
+          "characters": 209
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "8785b5882bbb6277e08a9018232387918ae0b7ff606ebf889b4d54cde86881cc",
+          "characters": 307
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "021fe614360244aaebcf7c848d19a1fc04231f76839368d33952a229c2967184",
+          "characters": 406
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "39098189464ce19540b046310905a7873ed45d97a091f61c6ba7b075606a99c0",
+          "characters": 705
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "f80fb04583d4bb4c185b37f8dff9b85b6377ad486f2b5d6b6d9dfdf2d28600c6",
+          "characters": 958
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "c61aadb2e8963d58dcf263b5c7f2739cdf1fed6b95786b9ca2fccef0513d7a7e",
+          "characters": 1135
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "17eeafe8a8d2d8bdda32f8d034244dc0a6ab36f01e04397f77f10596ceeb2fea",
+          "characters": 98
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "f5f32dfc6672415e04b6ab94fbe8d65da9f58a6180b562d5790cb53f117fd6f6",
+          "characters": 197
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "544a2225c3922b58ba91fc9acde1f028d4b504747a1b61b07c05c124290fc3ed",
+          "characters": 267
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "d586443b6d4c51e12ce9e7e1e45cf5512120517d5dcf1b8653931c90bca13895",
+          "characters": 328
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "1a947da0d08e1a6ea50106d8825855a33d4a7c12ce9ce59535f05d0408a77230",
+          "characters": 43
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "ae5718c02602847901f879e71727979b1570f1dc441d320a2e5b7c0d3a8ca7c8",
+          "characters": 231
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "6cf775b82d466545c50f0a15897ea742f37eabec6f02478c4ca76c4dea3ea03f",
+          "characters": 42
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "776c2bc9114d267c07d844557f2692fce2a0c024ce8f0b265a245886e3a5d89f",
+          "characters": 386
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "3d0c919e49abcfce890af1fabb64f6401ec0021086ba55807624ef7f5ec6abae",
+          "characters": 375
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "00d3c03711e35e30abc79b0414b79bd72df6052c83037e1f780726f809ae35d8",
+          "characters": 104
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "8e42b0aa47b3f2b84962a95e40fa2795f7ebdc64446e4b70cb5111c6870e54bf",
+          "characters": 698
+        }
+      ]
+    },
+    {
+      "markdown_file": "02-create-requirement-plan.md",
+      "title": "Create Requirement Plan",
+      "source_url": "https://chatgpt.com/share/6af438ef-e2f4-83e8-8419-b1e98ffa9165",
+      "source_response_sha256": "934914b5b232384f448e95802db5418c5b28ca190090a704a2f9aecd63482e7f",
+      "markdown_sha256": "a81149f68c3c8041a8048b2273b65df39e9d96ef8a8b2f10e4bacf5f5bbba370",
+      "counts": {
+        "user": 23,
+        "assistant": 23
+      },
+      "scope": "Visible user/assistant messages on the shared conversation path, in original order. Hidden records, system/tool messages and internal reasoning/context records are excluded. Original image references are preserved; image binaries are not embedded.",
+      "message_text_hashes": [
+        {
+          "role": "User",
+          "sha256_utf8": "a7666a2a9151ca35766de7edc945fbc082ef9dd48c0d8f335d6aac8d79811bd6",
+          "characters": 62
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "cda671b2fcffb671e926fd1d69960a3e15f145f66bb24e92b7d76fc30adf438a",
+          "characters": 21620
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "a9e9e6b78a8a8f87b93875a1e9abe7df1e950a40301a96c33a7505d961460063",
+          "characters": 60
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "455bddf0ed26a1f05f8a83c5810f18ea89fc52ddd0efd91f9c7791221dbf5d4b",
+          "characters": 10528
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "7e4de2931c163df0043a31742eb445f65876a4b959b5ee656498d40269a1122c",
+          "characters": 82
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "04b0a991d0ceffca646d1a76cccb99a20b9222b91f91d7fab2ae7d13ce6d80bf",
+          "characters": 5333
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "db4bb924e46c259f0facf26793c00759ef698e53c1add748ed15307e01d518ed",
+          "characters": 121
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "7180e54cf3eafcacae2c71e0d5d044d83e2089d30f184e5721ea081d36e61748",
+          "characters": 11470
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "99a8f5d0e62f19c2823e61f9bdabe5164c2801a411de9ff34a0c94fd83d3fdcf",
+          "characters": 104
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "e24639eb3b9971e550fe719a24ffa50d7137613fe1daab5ce9795e4502e8def0",
+          "characters": 36421
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "f67030b47ccb5b87780069ebd80ec1623090c5e11b390cf968a10f9f302130ad",
+          "characters": 1738
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "126cade03faa62451e2b62be1fcaf81427cfb60ca91a3254e2da0a63462e27b4",
+          "characters": 24226
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "64801143c779a4308fc659300e206f891a069eff0d512d9fd3a79a79c981daa3",
+          "characters": 43
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "150d24b797a246356971d87c2ab31f8e9849d6f2785a6499e994caa3172272ca",
+          "characters": 11092
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "a435a627aeb5b28ab6b4aa3d47fddf1dd258ccdbacce0b6c792c259a3c4463d6",
+          "characters": 125
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "93b3b0d0907cc2a1e76eace6d47a16839b12682ebd1ada824513af2afb8b310a",
+          "characters": 18915
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "f29c403dddc35ab3db1af4069efb5b44cb8f936d180490df1ff93eac10df758e",
+          "characters": 168
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "e342a8f65f5b04e50f4d0571201d25917f60109bbfb644eaf6c50060d8198b49",
+          "characters": 4204
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "e99a33b98d666526a740887834751f278ebb59e521f2c4b8498e5d938df14a25",
+          "characters": 117
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "c08adcfa3170886528187110bf5ea93b132e3d4cf2b515b40ec2c26d9c1dbd5c",
+          "characters": 7147
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "b2a25a3a039b47193359736758d94f5537ba5c01b22b4d80d04a33d7bcb8c1a7",
+          "characters": 81
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "dc05aa8fa4c9810db4264349e38d5a8520e559696c539625c841037b5805ab35",
+          "characters": 11704
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "6587f0189313c341bc7693a15ed17a17c93e1c67a70fc1db681aaca1a55d003d",
+          "characters": 68
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "d56b5c248c89c201a9db29a7c1e038fe365daf29573a79e860c38218b850823c",
+          "characters": 4526
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "a46897fa453b9aa25456695e2987207f4497190558cd0e8f1e397f7960c2a9f5",
+          "characters": 37
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "9345755ff32b1cb84002f1b510e85cd48ab612a82ea2693d57c3f919541d7ece",
+          "characters": 2631
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "d0e0c507a2f99acf99c96b70177365a5ba0de228cfaf1ccef5bd2e969283e869",
+          "characters": 93
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "1ff64931249c1adc2e7e9d1bb2beddd2c2e57c1762ebee014763de23d9dbf824",
+          "characters": 7993
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "e9ce26757eacc007ca56039cad730c395cf496dd5a72e4ee9f91e7247ba8ab75",
+          "characters": 40
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "3bb7c8c1cafb0d14077c1b0b6e522fa95e24894adc4cca3a74c62120524a0fa6",
+          "characters": 3689
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "8740c365502794d99ecdd308a5ce8c39ad01df76663b01aff9c88889a9be10c5",
+          "characters": 14
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "293fbeb1c6c947014102ab91278d46651a08b4ce77efae2b00b3c8e31ff646a3",
+          "characters": 9626
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "01902c1b8fe2f418ba1d6bcf39f30c3a449ae512a8724d1ca075d01eb013d71a",
+          "characters": 75
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "55d03a3e98c608bd52da7c75761addddc93556f67971a0f654b44f7cfa7bd729",
+          "characters": 32077
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "e6505c9709e1127a0e3361c927cbcd2cc3b2215b1ce04d58de2700c9c033d424",
+          "characters": 127
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "476abd5d808a6776b3433a1819dfa4e6a653df72cd1d49c740da8abf88c6c44f",
+          "characters": 17103
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "92f9689c947462df935f2560aa713211945898e1ffd2732d651dc50e8cbb00ca",
+          "characters": 38
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "5ae6c3e6b48ca43db5d9e1f6c1bddd4a8a78ced09f7d33a13ab47cba353d3954",
+          "characters": 10505
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "2250e73a05a643e75a4517d64f16528160c06ed047031f82e1095932f5b780c8",
+          "characters": 161
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "3fb9daaf49ab6af2309973a35cf8190c78cd62c5ab921dfcccd08bdc64a3f138",
+          "characters": 42328
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "characters": 0
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "03fe4960d81e9b73732cb8feb832dbd5ca80ed9e84aa24af78a63db0dfe83d79",
+          "characters": 8504
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "7a39e3be4fc1e96af6a0eda88741e0657ec2f075aa2e9d590666074ea2921ada",
+          "characters": 84
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "9c86a8111b956f64124ac644712830e18a91f32510d8c9063b01d4cdcc727e3a",
+          "characters": 11673
+        },
+        {
+          "role": "User",
+          "sha256_utf8": "8915bc699ebfe3f37158841d150d3bbf2f42c3cce2e44132f4382d92cb9435bc",
+          "characters": 152
+        },
+        {
+          "role": "Assistant",
+          "sha256_utf8": "f6dd27b632ca4e2c005f1013f125f1807253c3a15180035d349077dd38e16111",
+          "characters": 18200
+        }
+      ],
+      "excluded_record_counts": {
+        "system:text": 44,
+        "assistant:model_editable_context": 9,
+        "tool:text": 36,
+        "assistant:text": 11,
+        "assistant:reasoning_recap": 23,
+        "assistant:thoughts": 16,
+        "assistant:code": 10
+      }
+    }
+  ]
+}

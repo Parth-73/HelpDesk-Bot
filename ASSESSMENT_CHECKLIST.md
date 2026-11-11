@@ -51,4 +51,4 @@ This verifies the measured readiness/database workload. It does **not** establis
 
 ## Submission materials
 
-The public app, GitHub code, README, implementation checklist and test reports are available. Two original shared conversation links supplied by the owner are listed in [ai_sessions/README.md](ai_sessions/README.md), without edited transcripts or reconstructed summaries. Shared-session links are available for review; actual client-exported Markdown transcripts are not included, and the assessment's requested export format should be checked separately.
+The public app, GitHub code, README, implementation checklist and test reports are available. Both owner-provided shared sessions are now exported as actual Markdown conversations in [ai_sessions/README.md](ai_sessions/README.md), with original message text and order preserved, plus source links and checksum provenance. These are shared-snapshot exports, not assistant-written summaries or a claim of a complete private/client history. Snapshot boundaries and non-embedded image references are documented in that folder.
