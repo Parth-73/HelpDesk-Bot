@@ -1,0 +1,41 @@
+name: Verify deployment image
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the complete production image
+        run: docker build --tag helpdesk-deploy-check .
+      - name: Start isolated CI database
+        run: |
+          docker network create helpdesk-ci
+          docker run -d --name helpdesk-db --network helpdesk-ci \
+            -e POSTGRES_USER=helpdesk -e POSTGRES_PASSWORD=ci-only \
+            -e POSTGRES_DB=helpdesk_test postgres:16-alpine
+          for attempt in $(seq 1 30); do
+            if docker exec helpdesk-db pg_isready -U helpdesk -d helpdesk_test; then exit 0; fi
+            sleep 2
+          done
+          exit 1
+      - name: Run the unchanged production startup
+        run: |
+          docker run -d --name helpdesk-app --network helpdesk-ci -p 8000:8000 \
+            -e DATABASE_URL=postgresql://helpdesk:ci-only@helpdesk-db:5432/helpdesk_test \
+            -e GEMINI_API_KEY=ci-placeholder-not-a-real-key \
+            -e ALLOWED_ORIGINS= helpdesk-deploy-check
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://localhost:8000/api/ready; then exit 0; fi
+            sleep 2
+          done
+          docker logs helpdesk-app
+          exit 1
+      - name: Check served frontend and persisted chat without consuming Gemini quota
+        run: python backend/scripts/deployment_smoke.py http://localhost:8000
+      - name: Show container logs
+        if: always()
+        run: docker logs helpdesk-app || true

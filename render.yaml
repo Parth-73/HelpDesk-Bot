@@ -1,3 +1,5 @@
+# Creates one public Docker web service and its private PostgreSQL database.
+# Render's free PostgreSQL expires after 30 days; upgrade/migrate before then.
 services:
   - type: web
     name: dpm-101-helpdesk
@@ -6,19 +8,28 @@ services:
     dockerfilePath: ./Dockerfile
     healthCheckPath: /api/ready
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.16
       - key: APP_ENV
         value: production
       - key: DATABASE_URL
-        sync: false
+        fromDatabase:
+          name: dpm-101-helpdesk-db
+          property: connectionString
       - key: DATABASE_POOLER
-        value: "true"
+        value: "false"
       - key: GEMINI_API_KEY
         sync: false
       - key: GEMINI_MODEL
         value: gemini-2.5-flash-lite
       - key: COURSE_DOCS_PATH
         value: SD_Assessment/SD_Assessment/course_docs
+      # The frontend and API use the same HTTPS origin; cross-origin access
+      # stays disabled. No assigned hostname needs to be entered manually.
       - key: ALLOWED_ORIGINS
-        sync: false
+        value: ""
+
+databases:
+  - name: dpm-101-helpdesk-db
+    databaseName: dpm_helpdesk
+    user: helpdesk
+    plan: free
+    ipAllowList: []
