@@ -91,7 +91,7 @@ class AnswerCache:
             await self.db.cache_put(key, question, answer.text,
                 [{'filename': name, 'hash': hash_} for name, hash_ in answer.sources], self.kb.version)
             self.remember(key, answer)
-            return answer, False
+            return answer, answer.origin=='semantic_cache'
         task = asyncio.create_task(generate())
         self.inflight[key] = task
         def remove(done):

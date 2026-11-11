@@ -5,12 +5,15 @@ import re
 import time
 import psutil
 from dataclasses import dataclass
-from .faq_embeddings import OnnxEncoder
-from .faq_index import rank,rank_candidates,decode_index,MATCH_VERSION
+from .faq_embeddings import OnnxEncoder,shared_encoder
+from collections import OrderedDict
+from .faq_index import rank,rank_candidates,rank_equivalent_candidates,decode_index,MATCH_VERSION
 from .faq_repository import FAQRepository
 from .faq_validator import validate_faq
 from .cache_service import Answer
 from ..utils.normalization import normalize
+from .query_equivalence import intent, equivalent
+from .semantic_rules import operating_point
 
 logger=logging.getLogger(__name__)
 
@@ -23,12 +26,15 @@ class FAQSearch:
 
 
 class SemanticFAQService:
-    def __init__(self,db,kb,settings,encoder_factory=OnnxEncoder):
+    def __init__(self,db,kb,settings,encoder_factory=shared_encoder):
         self.repository=FAQRepository(db);self.kb=kb;self.settings=settings;self.encoder_factory=encoder_factory
         self.encoder=None;self.snapshot_id=None;self.entries={};self.rows=[];self.matrix=None;self.index=None
         self.mode='not_checked' if settings.faq_enabled else 'disabled';self.next_refresh=0;self.refresh_lock=asyncio.Lock()
         self.executor=ThreadPoolExecutor(max_workers=1,thread_name_prefix='faq-embedding')
         self.pending=0
+        self.encoder_lock=asyncio.Lock()
+        self.encoder_failed=False
+        self.query_vectors=OrderedDict()
 
     @property
     def cache_namespace(self): return self.snapshot_id or 'no-approved-faqs'
@@ -85,7 +91,9 @@ class SemanticFAQService:
     async def search(self,question,context):
         await self.refresh()
         if not self.entries: return FAQSearch()
-        resolved=self.resolve_question(question,context)
+        # Only a bounded, explicit resolved intent can bypass the generic context
+        # gate. The caller has already resolved references from this session.
+        resolved=question if intent(question) else self.resolve_question(question,context)
         # Contextual queries may still discover passages, but cannot bypass the
         # existing conservative contextual FAQ-answer gate.
         discovery=resolved or ' '.join(context[-1:]+[question])
@@ -93,8 +101,26 @@ class SemanticFAQService:
         if resolved and len(exact)==1: return FAQSearch(self.answer(next(iter(exact))),reason='exact_formulation')
         vector=await self.encode_query(discovery)
         if vector is None: return FAQSearch(reason='encoder_unavailable')
-        candidates=tuple(rank_candidates(vector,self.rows,self.matrix))
+        candidates=tuple(rank_equivalent_candidates(discovery,vector,self.rows,self.matrix,self.entries))
         if not resolved:return FAQSearch(candidates=candidates,reason='context_requires_retrieval')
+        point=operating_point(self.encoder.fingerprint) if self.encoder else None
+        if intent(resolved) and point:
+            compatible={}
+            for row,score in zip(self.rows,self.matrix @ vector):
+                entry=self.entries.get(row['faq_id'])
+                if entry and equivalent(resolved,entry.canonical_question) and equivalent(resolved,row['text']):
+                    compatible[row['faq_id']]=max(float(score),compatible.get(row['faq_id'],-1))
+            ranked=sorted(compatible.items(),key=lambda x:(-x[1],x[0]))
+            if ranked:
+                best,score=ranked[0];margin=score-(ranked[1][1] if len(ranked)>1 else 0)
+                if score>=point[0] and margin>=point[1]:
+                    return FAQSearch(self.answer(best),candidates,'intent_calibrated_match')
+            return FAQSearch(candidates=candidates,reason='intent_uncertain')
+        # Non-equivalent qualifiers or unknown entities must not sneak through
+        # the older cosine-only operating point. Exact reviewed formulations
+        # remain supported above; uncertain wording continues to document RAG.
+        if not intent(resolved):
+            return FAQSearch(candidates=candidates,reason='unproven_equivalence')
         result=rank(resolved,vector,self.rows,self.matrix)
         calibration=self.index['calibration']
         if calibration['decision_version']!=MATCH_VERSION: return FAQSearch(candidates=candidates,reason='calibration_version')
@@ -114,11 +140,31 @@ class SemanticFAQService:
 
     async def encode_query(self,question):
         """One shared ONNX session and bounded worker for chat and autocomplete."""
-        if self.mode!='onnx_semantic' or self.pending>=self.settings.faq_inference_queue: return None
+        # Response caching also works on an empty FAQ database. Assets are
+        # explicitly prepared by the operator; inference never downloads them.
+        if not self.settings.faq_enabled or self.encoder_failed: return None
+        if self.encoder is None:
+            async with self.encoder_lock:
+                if self.encoder is None and not self.encoder_failed:
+                    try:
+                        self.encoder=await asyncio.get_running_loop().run_in_executor(self.executor,self.encoder_factory,self.settings)
+                        if psutil.Process().memory_info().rss/1024**2>self.settings.faq_memory_limit_mb:
+                            raise MemoryError('Configured memory budget exceeded')
+                    except (OSError,ValueError,ImportError,MemoryError):
+                        self.encoder=None;self.encoder_failed=True;return None
+        if self.pending>=self.settings.faq_inference_queue: return None
+        key=(self.encoder.fingerprint,normalize(question))
+        if key in self.query_vectors:
+            self.query_vectors.move_to_end(key)
+            return self.query_vectors[key]
         self.pending+=1
         future=asyncio.get_running_loop().run_in_executor(self.executor,self.encoder.encode,[question])
         try:
-            try: return (await asyncio.shield(future))[0]
+            try:
+                vector=(await asyncio.shield(future))[0]
+                self.query_vectors[key]=vector
+                while len(self.query_vectors)>256:self.query_vectors.popitem(last=False)
+                return vector
             except asyncio.CancelledError:
                 await asyncio.shield(future);raise
         except Exception as error:

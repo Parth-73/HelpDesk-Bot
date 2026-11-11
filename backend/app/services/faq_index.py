@@ -42,6 +42,14 @@ def rank_candidates(vector, rows, matrix, limit=5):
     return sorted(scores.items(),key=lambda item:(-item[1],item[0]))[:limit]
 
 
+def rank_equivalent_candidates(question,vector,rows,matrix,entries,limit=5):
+    """Intent proof precedes cosine; incompatible candidates remain RAG hints."""
+    from .query_equivalence import equivalent
+    ranked=rank_candidates(vector,rows,matrix,limit=len(entries))
+    compatible={fid for fid,entry in entries.items() if equivalent(question,entry.canonical_question)}
+    return sorted(ranked,key=lambda item:(item[0] not in compatible,-item[1],item[0]))[:limit]
+
+
 def calibrate(cases,encoder,rows,matrix):
     if len(cases)<8 or not any(c['expected_faq_id'] for c in cases) or not any(c['expected_faq_id'] is None for c in cases):
         raise ValueError('Calibration requires at least eight reviewed positive and hard-negative cases')

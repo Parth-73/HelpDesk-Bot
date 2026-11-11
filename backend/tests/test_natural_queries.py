@@ -96,7 +96,12 @@ async def test_real_model_candidates_feed_safe_document_fallback(db,kb):
     service.encoder=OnnxEncoder(db.settings);service.mode='onnx_semantic';service.next_refresh=float('inf')
     try:
         search=await service.search('What to study?',[])
-        assert search.answer is None and len(search.candidates)==5
+        assert len(search.candidates)==5
+        # Calibrated bounded intent may now answer locally; either path must
+        # retain current, source-grounded course content and discovery hints.
+        if search.answer is not None:
+            assert 'user research' in search.answer.text
+            assert search.answer.filenames==['01_course_handbook.txt']
         assert any(service.entries[f].topic=='Course Content' for f,_ in search.candidates)
         passages,abstention=Retriever(kb).retrieve('What to study?',[],service.passage_hints(search.candidates))
         assert not abstention and any(p.topic=='overview' for p in passages)

@@ -2,8 +2,21 @@
 import json
 from pathlib import Path
 import threading
+from functools import lru_cache
 import numpy as np
 from ..config import Settings
+
+
+@lru_cache(maxsize=1)
+def _shared_encoder(path,model,revision,threads):
+    return OnnxEncoder(Settings(faq_model_path=path,faq_embedding_model=model,
+        faq_embedding_revision=revision,faq_embedding_threads=threads))
+
+
+def shared_encoder(settings):
+    """One bounded process-wide session, also shared across app lifespans."""
+    return _shared_encoder(str(settings.faq_model_path),settings.faq_embedding_model,
+        settings.faq_embedding_revision,settings.faq_embedding_threads)
 
 
 class OnnxEncoder:

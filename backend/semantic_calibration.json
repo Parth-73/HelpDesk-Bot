@@ -1,0 +1,12 @@
+{
+  "equivalence_version": "bounded-intents-v1",
+  "model_fingerprint": "78a3a673fef6661621c371b614d190fd9d99ea5efb9e5bddeb7534bd77ae11bf",
+  "threshold": 0.26285940408706665,
+  "margin": 0.26285940408706665,
+  "correct_accepts": 43,
+  "false_accepts": 0,
+  "observations": 43,
+  "benchmark_hash": "d680f5a75b3f5cdd929421872054b33afe5b66c618c47b3a76c07fb2b24dd46e",
+  "split": "calibration-labeled queries and cache pairs only",
+  "limits": "Empirical operating point for the bounded intent grammar. Not a probability or guarantee on unseen wording."
+}

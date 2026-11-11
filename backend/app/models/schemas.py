@@ -19,7 +19,7 @@ class ChatRequest(BaseModel):
 
 
 class ChatResponse(BaseModel):
-    answer_path: Literal["response_cache", "semantic_faq", "gemini_rag", "deterministic", "abstention"] | None = None
+    answer_path: Literal["response_cache", "semantic_cache", "semantic_faq", "gemini_rag", "deterministic", "abstention"] | None = None
     answer: str
     sources: list[str]
     cached: bool = False

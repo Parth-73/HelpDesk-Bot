@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "production mode initializes a server session",
+    "composer disabled during request",
+    "Enter during loading does not duplicate submission",
+    "source citation displayed",
+    "reload reconciles persisted server transcript",
+    "friendly failure shown",
+    "retry retains idempotency key",
+    "retry retains one user message",
+    "no overflow at 320px",
+    "no overflow at 390px",
+    "no overflow at 768px",
+    "no browser runtime errors"
+  ],
+  "errors": [],
+  "scope": "Production Vite bundle, mocked HTTP API; backend behavior tested separately with PostgreSQL."
+}

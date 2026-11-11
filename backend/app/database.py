@@ -5,6 +5,7 @@ from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine
 from sqlalchemy.pool import NullPool
 from .models import faq_models  # Register additive FAQ tables with the shared metadata.
+from .models.semantic_cache import SemanticCacheEntry
 from .config import Settings
 from .models.database_models import Base, Session, Message, ResponseCache, UsageStatistics, RequestRecord, now
 from .models.schemas import ChatRequest, ChatResponse
@@ -145,3 +146,18 @@ class Database:
     async def cleanup_cache(self):
         async with self.session() as db, db.begin():
             await db.execute(delete(ResponseCache).where(ResponseCache.expires_at < now()))
+
+    async def semantic_cache_rows(self, kb, fingerprint):
+        async with self.session() as db:
+            result=await db.scalars(select(SemanticCacheEntry).where(
+                SemanticCacheEntry.knowledge_version==kb,
+                SemanticCacheEntry.prompt_version==PROMPT_VERSION,
+                SemanticCacheEntry.model_version==self.settings.gemini_model,
+                SemanticCacheEntry.embedding_version==fingerprint,
+                SemanticCacheEntry.expires_at>now()).order_by(SemanticCacheEntry.expires_at.desc()).limit(self.settings.cache_max_items))
+            return list(result)
+
+    async def semantic_cache_put(self, values):
+        async with self.session() as db, db.begin():
+            await db.execute(insert(SemanticCacheEntry).values(**values).on_conflict_do_update(
+                index_elements=['cache_key'],set_=values))

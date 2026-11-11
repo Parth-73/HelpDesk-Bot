@@ -14,6 +14,7 @@ from .context_service import resolve_conversation
 from .policy_answers import PolicyAnswers
 from .partial_answer_service import supported_portion
 from .retrieval_service import broad_learning
+from .semantic_response_cache import SemanticResponseCache
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +28,7 @@ class ChatService:
         self.requests: dict[str, tuple[str, asyncio.Task]] = {}
         self.semantic = SemanticFAQService(db, kb, settings)
         self.suggestions = FAQSuggestionService(self.semantic, settings)
+        self.semantic_cache=SemanticResponseCache(db,kb,settings,self.cache,self.semantic) if kb else None
 
     async def chat(self, request: ChatRequest) -> ChatResponse:
         if not self.kb:
@@ -60,11 +62,19 @@ class ChatService:
             history = await self.db.history(request.session_id)
             resolution = resolve_conversation(request.question, history, relevant_context)
             context = resolution.user_context
-            diagnostic('context','resolved',used_context=bool(context),assessment=resolution.subject)
+            diagnostic('context','resolved',used_context=bool(context),assessment=resolution.subject,
+                original_query=request.question,resolved_query=resolution.retrieval_question)
             generation_context = context + ([resolution.retrieval_question] if resolution.retrieval_question != request.question else [])
             await self.semantic.refresh()
             key = digest([cache_key(request.question, generation_context, self.kb.version, self.settings.gemini_model), self.semantic.cache_namespace])
             async def produce():
+                if resolution.needs_clarification:
+                    diagnostic('context','clarification_required')
+                    return Answer('Which course item or assessment do you mean?',(),origin='deterministic')
+                reused=await self.semantic_cache.lookup(resolution.retrieval_question,generation_context,request.session_id)
+                if reused is not None:
+                    diagnostic('semantic_cache','equivalent_hit')
+                    return reused
                 direct = self.policies.decide(resolution.retrieval_question, context, resolution.subject)
                 if direct is not None:
                     diagnostic('policy','supported')
@@ -102,7 +112,9 @@ class ChatService:
                 diagnostic('evidence','model_abstention' if result.origin=='abstention' else 'validated')
                 return result
             answer, cached = await self.cache.get_or_create(key, request.question, produce)
-            path = "response_cache" if cached else {"gemini":"gemini_rag", "exact_cache":"response_cache"}.get(answer.origin, answer.origin)
+            if not cached:
+                await self.semantic_cache.remember(key,request.question,resolution.retrieval_question,generation_context,request.session_id,answer)
+            path = 'semantic_cache' if answer.origin=='semantic_cache' else "response_cache" if cached else {"gemini":"gemini_rag", "exact_cache":"response_cache"}.get(answer.origin, answer.origin)
             diagnostic('response',path,cached=cached)
             response = ChatResponse(answer=answer.text, sources=answer.filenames, cached=cached, session_id=request.session_id, answer_path=path)
             await self.db.complete(request, token, response)

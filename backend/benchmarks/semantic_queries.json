@@ -1,0 +1,1563 @@
+{
+  "version": 1,
+  "source": "Official course_docs; manually authored labels, not model judgments. Independent means separately authored from existing FAQ wording, not an independent human reviewer.",
+  "faq_ids": {
+    "exam_duration": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+    "capstone_deadline": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+    "passing": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+    "exam_materials": "c75d66f3-ca34-5315-8580-516f4f624533",
+    "course_duration": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+    "exam_date": "583eb62a-b28c-532a-9186-c1a061ca5674",
+    "quiz_miss": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+    "late_submission": "5fa08d21-c200-5991-a785-074792b838aa",
+    "fee": "f11ec004-d81b-599d-87b1-832073f1d5be",
+    "overview": "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+    "weights": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+    "technical": "8150185c-7b3c-5b9d-b315-3a773ca52015"
+  },
+  "cases": [
+    {
+      "id": "Q001",
+      "question": "How long is the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q002",
+      "question": "What is the final examination duration?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q003",
+      "question": "How many minutes does the final last?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q004",
+      "question": "How much time is allotted for the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q005",
+      "question": "What is the length of the proctored test?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q006",
+      "question": "How long will my final exam take?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q007",
+      "question": "When is the capstone due?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q008",
+      "question": "What’s the product case deadline?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q009",
+      "question": "When must I hand in my project?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q010",
+      "question": "What is the submission date for the capstone?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q011",
+      "question": "By when should the product case be submitted?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q012",
+      "question": "When do we need to turn in the capstone case?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q013",
+      "question": "How much to pass?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "passing"
+    },
+    {
+      "id": "Q014",
+      "question": "What are the course passing requirements?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "passing"
+    },
+    {
+      "id": "Q015",
+      "question": "How to pass?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "passing"
+    },
+    {
+      "id": "Q016",
+      "question": "What do I need to earn the certificate?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "passing"
+    },
+    {
+      "id": "Q017",
+      "question": "What marks are needed to clear DPM-101?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "passing"
+    },
+    {
+      "id": "Q018",
+      "question": "What are the conditions for passing?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "passing"
+    },
+    {
+      "id": "Q019",
+      "question": "Can I use notes?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_materials"
+    },
+    {
+      "id": "Q020",
+      "question": "Are notes allowed in the final?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_materials"
+    },
+    {
+      "id": "Q021",
+      "question": "May I consult my notes during the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_materials"
+    },
+    {
+      "id": "Q022",
+      "question": "Is the final open book?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_materials"
+    },
+    {
+      "id": "Q023",
+      "question": "Are course notes permitted in the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_materials"
+    },
+    {
+      "id": "Q024",
+      "question": "Can I bring notes into the final examination?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_materials"
+    },
+    {
+      "id": "Q025",
+      "question": "How long is the course?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "course_duration"
+    },
+    {
+      "id": "Q026",
+      "question": "How many weeks does DPM-101 last?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "course_duration"
+    },
+    {
+      "id": "Q027",
+      "question": "What is the course length?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "course_duration"
+    },
+    {
+      "id": "Q028",
+      "question": "How long does the online program run?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "course_duration"
+    },
+    {
+      "id": "Q029",
+      "question": "When is the final exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_date"
+    },
+    {
+      "id": "Q030",
+      "question": "What day is the examination scheduled?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_date"
+    },
+    {
+      "id": "Q031",
+      "question": "When do we sit the proctored final?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "exam_date"
+    },
+    {
+      "id": "Q032",
+      "question": "What is the final exam date and time?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "exam_date"
+    },
+    {
+      "id": "Q033",
+      "question": "Can I miss one quiz?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "quiz_miss"
+    },
+    {
+      "id": "Q034",
+      "question": "How many weekly quizzes can I skip?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "quiz_miss"
+    },
+    {
+      "id": "Q035",
+      "question": "What if I miss a weekly quiz?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "quiz_miss"
+    },
+    {
+      "id": "Q036",
+      "question": "Can I skip one weekly quiz without a penalty?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "quiz_miss"
+    },
+    {
+      "id": "Q037",
+      "question": "Can I submit a quiz late?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "late_submission"
+    },
+    {
+      "id": "Q038",
+      "question": "Are late capstone submissions accepted?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "late_submission"
+    },
+    {
+      "id": "Q039",
+      "question": "What if I hand in my project a day late?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "late_submission"
+    },
+    {
+      "id": "Q040",
+      "question": "Is there still a grace period for late work?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "late_submission"
+    },
+    {
+      "id": "Q041",
+      "question": "How much does the verified track cost?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "fee"
+    },
+    {
+      "id": "Q042",
+      "question": "What is the certificate fee?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "fee"
+    },
+    {
+      "id": "Q043",
+      "question": "How much must I pay for the verified certificate?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "fee"
+    },
+    {
+      "id": "Q044",
+      "question": "What is the price of the verified track?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "fee"
+    },
+    {
+      "id": "Q045",
+      "question": "What to study?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "calibration",
+      "intent": "overview"
+    },
+    {
+      "id": "Q046",
+      "question": "What will I learn in DPM-101?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "overview"
+    },
+    {
+      "id": "Q047",
+      "question": "What topics does this course cover?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "overview"
+    },
+    {
+      "id": "Q048",
+      "question": "What is the syllabus?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "short",
+      "history": [],
+      "split": "test",
+      "intent": "overview"
+    },
+    {
+      "id": "Q049",
+      "question": "How is the course graded?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "weights"
+    },
+    {
+      "id": "Q050",
+      "question": "What are the assessment weights?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "weights"
+    },
+    {
+      "id": "Q051",
+      "question": "How much does each assessment count?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "weights"
+    },
+    {
+      "id": "Q052",
+      "question": "What is the grading breakdown?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "weights"
+    },
+    {
+      "id": "Q053",
+      "question": "Can I take the exam on an iPad?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "technical"
+    },
+    {
+      "id": "Q054",
+      "question": "Can I use my phone for the proctored exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "technical"
+    },
+    {
+      "id": "Q055",
+      "question": "What equipment is needed for the final?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "calibration",
+      "intent": "technical"
+    },
+    {
+      "id": "Q056",
+      "question": "What are the final exam technical requirements?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "independent_paraphrase",
+      "history": [],
+      "split": "test",
+      "intent": "technical"
+    },
+    {
+      "id": "Q057",
+      "question": "How long does the exam take?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q058",
+      "question": "When is the capstone case due?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q059",
+      "question": "What is the minimum overall score needed for the Verified Certificate?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "2bd29cdc-008d-5878-8dd5-770f2b1822f6"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "passing"
+    },
+    {
+      "id": "Q060",
+      "question": "Can I use my notes during the exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "c75d66f3-ca34-5315-8580-516f4f624533"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "exam_materials"
+    },
+    {
+      "id": "Q061",
+      "question": "How long does the Digital Product Management (DPM-101) course last?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5252428f-b96e-5f76-a765-2f40bcbcc63a"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "course_duration"
+    },
+    {
+      "id": "Q062",
+      "question": "When is the final exam?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "exam_date"
+    },
+    {
+      "id": "Q063",
+      "question": "What happens if I miss a weekly quiz?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "quiz_miss"
+    },
+    {
+      "id": "Q064",
+      "question": "Can I submit the capstone case late?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "5fa08d21-c200-5991-a785-074792b838aa"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "late_submission"
+    },
+    {
+      "id": "Q065",
+      "question": "How much does the Verified Certificate Track for Digital Product Management (DPM-101) cost?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "fee"
+    },
+    {
+      "id": "Q066",
+      "question": "What subjects are included in the Digital Product Management (DPM-101) curriculum?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "overview"
+    },
+    {
+      "id": "Q067",
+      "question": "How much is each part of the assessment worth?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "704c1590-1b97-5edc-b9b3-199cbeef7e25"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "weights"
+    },
+    {
+      "id": "Q068",
+      "question": "Can I take the exam on a tablet?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "8150185c-7b3c-5b9d-b315-3a773ca52015"
+      ],
+      "category": "approved_paraphrase",
+      "history": [],
+      "split": "approved",
+      "intent": "technical"
+    },
+    {
+      "id": "Q069",
+      "question": "When is it?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "92b98407-391e-5b71-82dd-b1d8cf9b242a"
+      ],
+      "category": "contextual",
+      "history": [
+        "When is the capstone due?"
+      ],
+      "split": "test",
+      "intent": "capstone_deadline"
+    },
+    {
+      "id": "Q070",
+      "question": "When is it?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "583eb62a-b28c-532a-9186-c1a061ca5674"
+      ],
+      "category": "contextual",
+      "history": [
+        "How long is the final exam?"
+      ],
+      "split": "test",
+      "intent": "exam_date"
+    },
+    {
+      "id": "Q071",
+      "question": "Can I skip one?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "0006eea5-14c3-57ee-8d04-fe8b396ad3ef"
+      ],
+      "category": "contextual",
+      "history": [
+        "How many weekly quizzes are there?"
+      ],
+      "split": "test",
+      "intent": "quiz_miss"
+    },
+    {
+      "id": "Q072",
+      "question": "How much?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "f11ec004-d81b-599d-87b1-832073f1d5be"
+      ],
+      "category": "contextual",
+      "history": [
+        "What is the verified certificate track?"
+      ],
+      "split": "test",
+      "intent": "fee"
+    },
+    {
+      "id": "Q073",
+      "question": "And how long?",
+      "expected_route": "faq",
+      "expected_faq_ids": [
+        "cc0eeb13-5f1f-5872-8d20-108d5757d7e4"
+      ],
+      "category": "contextual",
+      "history": [
+        "When is the final exam?"
+      ],
+      "split": "test",
+      "intent": "exam_duration"
+    },
+    {
+      "id": "Q074",
+      "question": "When is it?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q075",
+      "question": "Can I skip one?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q076",
+      "question": "How much?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q077",
+      "question": "What about it?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q078",
+      "question": "And how long?",
+      "expected_route": "clarification",
+      "expected_faq_ids": [],
+      "category": "ambiguous",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q079",
+      "question": "How do I get a refund?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q080",
+      "question": "Who is the instructor?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q081",
+      "question": "How many questions are on the final exam?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q082",
+      "question": "Does this course teach SQL indexing?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q083",
+      "question": "Who won the cricket match last night?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q084",
+      "question": "Can I retake the exam?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q085",
+      "question": "Are scientific calculators allowed?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q086",
+      "question": "Can I use an AI calculator?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q087",
+      "question": "Can I use notes in the quizzes?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q088",
+      "question": "How long is the capstone presentation?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q089",
+      "question": "What is the maximum exam score?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q090",
+      "question": "Can I get extra time for the exam?",
+      "expected_route": "unsupported",
+      "expected_faq_ids": [],
+      "category": "hard_negative",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q091",
+      "question": "Do I not have to pass the exam?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "negation",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q092",
+      "question": "Can I pass with 70% overall and 35% in the final?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "conditional",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q093",
+      "question": "Can I pass with 70% overall and 45% in the final?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "conditional",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q094",
+      "question": "What was the passing score in January 2026?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q095",
+      "question": "What was the old capstone deadline?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q096",
+      "question": "What is the overall passing threshold?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q097",
+      "question": "What is the final-exam passing threshold?",
+      "expected_route": "policy",
+      "expected_faq_ids": [],
+      "category": "historical",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q098",
+      "question": "Can I use a physical calculator?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "scope",
+      "history": [],
+      "split": "test",
+      "intent": null
+    },
+    {
+      "id": "Q099",
+      "question": "Can I use AI tools?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "scope",
+      "history": [],
+      "split": "calibration",
+      "intent": null
+    },
+    {
+      "id": "Q100",
+      "question": "Do I need both 60% overall and 40% in the final?",
+      "expected_route": "gemini_rag",
+      "expected_faq_ids": [],
+      "category": "conditional",
+      "history": [],
+      "split": "test",
+      "intent": null
+    }
+  ],
+  "cache_pairs": [
+    {
+      "left": "How long is the exam?",
+      "right": "How long is the course?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I miss one quiz?",
+      "right": "Can I submit a quiz late?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "When is the capstone due?",
+      "right": "What was the old capstone deadline?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I use a physical calculator?",
+      "right": "Can I use AI tools?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "What is the overall passing threshold?",
+      "right": "What is the final-exam passing threshold?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I pass with 70% overall and 35% in the final?",
+      "right": "Can I pass with 70% overall and 45% in the final?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I use notes?",
+      "right": "Can I not use notes?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I use notes?",
+      "right": "Can I use notes in the quizzes?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How long is the exam?",
+      "right": "What is the final examination duration?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "How long is the exam?",
+      "right": "How many minutes does the final last?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How long is the exam?",
+      "right": "How much time is allotted for the exam?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "How long is the exam?",
+      "right": "What is the length of the proctored test?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How long is the exam?",
+      "right": "How long will my final exam take?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "When is the capstone due?",
+      "right": "What’s the product case deadline?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "When is the capstone due?",
+      "right": "When must I hand in my project?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "When is the capstone due?",
+      "right": "What is the submission date for the capstone?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "When is the capstone due?",
+      "right": "By when should the product case be submitted?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "When is the capstone due?",
+      "right": "When do we need to turn in the capstone case?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How much to pass?",
+      "right": "What are the course passing requirements?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "How much to pass?",
+      "right": "How to pass?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How much to pass?",
+      "right": "What do I need to earn the certificate?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "How much to pass?",
+      "right": "What marks are needed to clear DPM-101?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How much to pass?",
+      "right": "What are the conditions for passing?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I use notes?",
+      "right": "Are notes allowed in the final?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I use notes?",
+      "right": "May I consult my notes during the exam?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I use notes?",
+      "right": "Is the final open book?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I use notes?",
+      "right": "Are course notes permitted in the exam?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I use notes?",
+      "right": "Can I bring notes into the final examination?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How long is the course?",
+      "right": "How many weeks does DPM-101 last?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "How long is the course?",
+      "right": "What is the course length?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How long is the course?",
+      "right": "How long does the online program run?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "When is the final exam?",
+      "right": "What day is the examination scheduled?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "When is the final exam?",
+      "right": "When do we sit the proctored final?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "When is the final exam?",
+      "right": "What is the final exam date and time?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I miss one quiz?",
+      "right": "How many weekly quizzes can I skip?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I miss one quiz?",
+      "right": "What if I miss a weekly quiz?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I miss one quiz?",
+      "right": "Can I skip one weekly quiz without a penalty?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I submit a quiz late?",
+      "right": "Are late capstone submissions accepted?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I submit a quiz late?",
+      "right": "What if I hand in my project a day late?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I submit a quiz late?",
+      "right": "Is there still a grace period for late work?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How much does the verified track cost?",
+      "right": "What is the certificate fee?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "How much does the verified track cost?",
+      "right": "How much must I pay for the verified certificate?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How much does the verified track cost?",
+      "right": "What is the price of the verified track?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "What to study?",
+      "right": "What will I learn in DPM-101?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "What to study?",
+      "right": "What topics does this course cover?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "What to study?",
+      "right": "What is the syllabus?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How is the course graded?",
+      "right": "What are the assessment weights?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "How is the course graded?",
+      "right": "How much does each assessment count?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "How is the course graded?",
+      "right": "What is the grading breakdown?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I take the exam on an iPad?",
+      "right": "Can I use my phone for the proctored exam?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I take the exam on an iPad?",
+      "right": "What equipment is needed for the final?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "calibration"
+    },
+    {
+      "left": "Can I take the exam on an iPad?",
+      "right": "What are the final exam technical requirements?",
+      "equivalent": true,
+      "expected_route": "cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "What are the weekly quiz weights?",
+      "right": "What is the final exam weighting?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "When is the capstone due?",
+      "right": "When is the final exam?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    },
+    {
+      "left": "Can I submit a quiz late?",
+      "right": "Can I submit a quiz one day late?",
+      "equivalent": false,
+      "expected_route": "reject_cached_answer",
+      "split": "test"
+    }
+  ]
+}
