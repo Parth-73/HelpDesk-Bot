@@ -153,3 +153,9 @@ Short study/preparation questions now retrieve the source-grounded course overvi
 The [semantic optimization report](backend/SEMANTIC_OPTIMIZATION.md) records a 100-query benchmark, 55 safe/unsafe cache pairs, three local ONNX model comparisons and PostgreSQL/browser regression results. MiniLM remains the deployment model. Approximate reuse requires a bounded equivalent intent, preserved assessment scope, current source hashes, matching knowledge/prompt/model/embedding/FAQ versions, compatible session context and complete verified evidence. Similarity alone never permits a cache hit. `answer_path=semantic_cache` uses the existing cache-hit counter.
 
 For an existing database, run `python -m app.init_db` from `backend/` before restart to add the semantic cache table; the Docker startup already does this. No new environment variable, service or runtime model download is required. The new prompt version invalidates old response keys. Existing exact cache, idempotency, autocomplete and RAG remain available.
+
+## Hosted load-test result — 1,500 arrivals
+
+[Loader.io public report](https://loader.io/reports/8d6f19bfb3e4296c725dd5f17a310bf3/results/d47af46a3b461f450a26097e477ecd62) · [Results and scope](backend/LOADERIO_LOAD_TEST.md) · [JSON results](backend/artifacts/loaderio_1500_readiness.json)
+
+On 11 November 2026 at 1:52 PM IST, the readiness test completed **1,500 client arrivals over 60 seconds**, with **1,500 successful responses**, **170 ms average response time**, and **zero HTTP errors, timeouts or network failures**. The report records 1,500 valid redirects. This verifies the measured hosted readiness/database workload; it does **not** establish 1,500 simultaneous chat users or live Gemini capacity.

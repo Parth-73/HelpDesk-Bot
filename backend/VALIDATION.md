@@ -51,3 +51,9 @@ Predictive autocomplete verified on 11 November 2026:
 - Live usage counters remained unchanged and autocomplete made zero Gemini calls. Original document hashes remain unchanged. Frontend TypeScript validation and production build passed.
 - Reports: `artifacts/autocomplete_report.json`, `artifacts/autocomplete_browser_checks.json`. Documentation and modified-file inventory: `AUTOCOMPLETE.md`.
 - The temporary QA server used port 8002; the user's existing backend process on 8000 was left untouched. Restart that older backend once to expose the new route. No public deployment or live FAQ regeneration was performed for autocomplete.
+
+Hosted readiness load test verified on 11 November 2026:
+
+- Loader.io: 1,500 arriving clients over 60 seconds; 1,500 successes, 170 ms average response time, zero HTTP errors/timeouts/network failures, and 1,500 valid redirects.
+- Scope: the configured `/api/ready` workload; not simultaneous chat, answer-quality or Gemini-capacity verification. Historical statements above describe their original validation dates.
+- [Public evidence, configuration provenance and limits](LOADERIO_LOAD_TEST.md); [JSON results](artifacts/loaderio_1500_readiness.json).
