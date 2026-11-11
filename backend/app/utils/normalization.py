@@ -3,7 +3,7 @@ import json
 import re
 import unicodedata
 
-PROMPT_VERSION = 'extractive-context-policy-v3'
+PROMPT_VERSION = 'extractive-hybrid-context-v4'
 
 
 def normalize(text: str) -> str:

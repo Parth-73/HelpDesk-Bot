@@ -1,0 +1,14 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "baseline_rss_mb": 44.703125,
+  "loaded_rss_mb": 110.0390625,
+  "observed_peak_rss_mb": 111.80078125,
+  "model_load_seconds": 3.688765999977477,
+  "query_count": 10,
+  "median_latency_ms": 10.456750052981079,
+  "max_latency_ms": 72.87579996045679,
+  "torch_imported": false,
+  "within_configured_memory_budget": true,
+  "scope": "Standalone CPU ONNX process, not a full hosted load test. RSS sampled after each inference."
+}

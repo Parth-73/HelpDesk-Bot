@@ -140,3 +140,8 @@ Chat flow: request/session validation → persisted idempotency → context-awar
 Deploy with the root Render blueprint (Docker runtime). Set DATABASE_URL and GEMINI_API_KEY as private runtime secrets; set ALLOWED_ORIGINS to the assigned HTTPS app origin. Keep one worker for process-level generation sharing. The Docker image builds the frontend, installs Python dependencies and prepares the pinned local FAQ model; startup initializes the schema and serves the app on PORT. The readiness endpoint validates configuration/schema/documents, not live API-key validity. Follow [Render Docker deployment documentation](https://render.com/docs/docker). This image has not been built locally and the public deployment remains unverified. On an empty database, prepare/extract/review/publish the FAQs following [FAQ_PIPELINE.md](backend/FAQ_PIPELINE.md); the JSON artifact alone is not the active database index.
 
 GEMINI_REQUESTS_PER_MINUTE can optionally enforce the provider budget assigned to your project; leave unset only when budgeting elsewhere. Never put private API/database credentials into frontend variables. Original course documents and logo are preserved. Standalone legacy scripts in the local FAQ extractor folder are not imported by the application and are excluded from this submission.
+
+
+## Natural-language retrieval update
+
+Short study/preparation questions now retrieve the source-grounded course overview with explicit scope limits. Top-five FAQ discovery, contextual follow-ups and structured abstention diagnostics are covered by 132 regression tests and live local API/browser checks. See [the investigation and evidence](backend/NATURAL_QUERY_RETRIEVAL.md).

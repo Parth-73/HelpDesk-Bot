@@ -1,5 +1,7 @@
 import asyncio
 import logging
+import json
+import re
 from ..database import Database
 from ..models.schemas import ChatRequest, ChatResponse
 from ..utils.exceptions import ServiceError
@@ -10,6 +12,8 @@ from .semantic_faq_service import SemanticFAQService
 from .faq_suggestion_service import FAQSuggestionService
 from .context_service import resolve_conversation
 from .policy_answers import PolicyAnswers
+from .partial_answer_service import supported_portion
+from .retrieval_service import broad_learning
 
 logger = logging.getLogger(__name__)
 
@@ -51,26 +55,55 @@ class ChatService:
         if replay:
             return replay
         try:
+            def diagnostic(stage,decision,**details):
+                logger.info('qa_route %s',json.dumps({'request_id':str(request.request_id),'stage':stage,'decision':decision,**details}))
             history = await self.db.history(request.session_id)
             resolution = resolve_conversation(request.question, history, relevant_context)
             context = resolution.user_context
+            diagnostic('context','resolved',used_context=bool(context),assessment=resolution.subject)
             generation_context = context + ([resolution.retrieval_question] if resolution.retrieval_question != request.question else [])
             await self.semantic.refresh()
             key = digest([cache_key(request.question, generation_context, self.kb.version, self.settings.gemini_model), self.semantic.cache_namespace])
             async def produce():
                 direct = self.policies.decide(resolution.retrieval_question, context, resolution.subject)
                 if direct is not None:
+                    diagnostic('policy','supported')
                     return direct
-                faq_answer = await self.semantic.match(request.question, context)
-                if faq_answer is not None:
-                    return faq_answer
-                passages, abstention = self.retriever.retrieve(resolution.retrieval_question, context)
+                # An unspecified referent should not be guessed from a nearby FAQ.
+                unresolved=resolution.retrieval_question==request.question
+                if re.search(r'^\s*can i skip (?:one|it)\s*\??$',request.question,re.I):
+                    unresolved='Referenced subject: weekly quizzes.' not in resolution.retrieval_question
+                if re.search(r'^\s*(when\b.*\bit\b|how much\s*\??$|can i skip (?:one|it)\s*\??$)',request.question,re.I) and unresolved:
+                    diagnostic('context','clarification_required')
+                    return Answer('Which course item or assessment do you mean?',(),origin='deterministic')
+                search=await self.semantic.search(resolution.retrieval_question, context)
+                diagnostic('semantic_faq',search.reason,candidates=[{'faq_id':i,'score':round(s,4)} for i,s in search.candidates])
+                if search.answer is not None and not broad_learning(request.question):
+                    return search.answer
+                passages, abstention = self.retriever.retrieve(resolution.retrieval_question, context,self.semantic.passage_hints(search.candidates),request_id=str(request.request_id))
                 if abstention:
+                    diagnostic('document_retrieval','abstention')
                     return Answer(abstention, (), origin='abstention')
-                generated = await self.gemini.generate(request.question, generation_context, passages)
-                return validate_answer(generated, passages)
+                partial=supported_portion(request.question,passages,self.kb)
+                if partial is not None:
+                    diagnostic('evidence','supported_portion',sources=partial.filenames)
+                    return partial
+                diagnostic('gemini','generation',passage_ids=[p.id for p in passages])
+                try:
+                    generated = await self.gemini.generate(request.question, generation_context, passages)
+                except Exception as error:
+                    diagnostic('gemini','error',code=getattr(error,'code',type(error).__name__))
+                    raise
+                try:
+                    result=validate_answer(generated, passages)
+                except ServiceError as error:
+                    diagnostic('evidence','rejected',code=error.code)
+                    raise
+                diagnostic('evidence','model_abstention' if result.origin=='abstention' else 'validated')
+                return result
             answer, cached = await self.cache.get_or_create(key, request.question, produce)
             path = "response_cache" if cached else {"gemini":"gemini_rag", "exact_cache":"response_cache"}.get(answer.origin, answer.origin)
+            diagnostic('response',path,cached=cached)
             response = ChatResponse(answer=answer.text, sources=answer.filenames, cached=cached, session_id=request.session_id, answer_path=path)
             await self.db.complete(request, token, response)
             return response

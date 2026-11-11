@@ -1,0 +1,112 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "approved": 10,
+  "rejected": 0,
+  "candidate": 0,
+  "batch_count": 3,
+  "snapshot_id": "fe247681150088b96d660111666dd08bd54de1080c126d95ca7bb820ce81ce2b",
+  "needs_review": 0,
+  "prompt_version": "faq-extraction-v1",
+  "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+  "duplicates_removed": 3,
+  "documents_processed": 4,
+  "candidates_generated": 13,
+  "authoritative_passages": 10,
+  "semantic_deduplication": true,
+  "untrusted_passages_excluded": 1,
+  "superseded_passages_excluded": 4,
+  "mode": "mocked_validation_only",
+  "real_gemini_calls": 0,
+  "mocked_offline_attempts": 3,
+  "note": "Test fixtures and test-only review decisions in an isolated, deleted PostgreSQL schema. Not a live-generated or production-approved FAQ dataset.",
+  "semantic_mode": "onnx_semantic",
+  "backend_process_rss_mb": 150.87890625,
+  "torch_imported": false,
+  "query_results": [
+    {
+      "question": "What percentage do I need to pass?",
+      "matched": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ],
+      "latency_ms": 0.2280999906361103
+    },
+    {
+      "question": "How much must I score in the final examination?",
+      "matched": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ],
+      "latency_ms": 0.08489994797855616
+    },
+    {
+      "question": "Can I pass with 70% overall and 35% in the final?",
+      "matched": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ],
+      "latency_ms": 0.08300004992634058
+    },
+    {
+      "question": "Are late submissions accepted?",
+      "matched": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ],
+      "latency_ms": 0.06609992124140263
+    },
+    {
+      "question": "Is the final exam open-book?",
+      "matched": true,
+      "sources": [
+        "04_exam_rules_and_faq.txt"
+      ],
+      "latency_ms": 0.06670004222542048
+    },
+    {
+      "question": "Can I take the exam on an iPad?",
+      "matched": true,
+      "sources": [
+        "04_exam_rules_and_faq.txt"
+      ],
+      "latency_ms": 0.07069995626807213
+    },
+    {
+      "question": "What is the course name?",
+      "matched": true,
+      "sources": [
+        "01_course_handbook.txt"
+      ],
+      "latency_ms": 0.06450002547353506
+    },
+    {
+      "question": "What is the deadline for the capstone?",
+      "matched": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ],
+      "latency_ms": 0.07019995246082544
+    },
+    {
+      "question": "How much does the Verified Certificate track cost?",
+      "matched": true,
+      "sources": [
+        "01_course_handbook.txt"
+      ],
+      "latency_ms": 0.07250008638948202
+    },
+    {
+      "question": "When is the final exam scheduled?",
+      "matched": true,
+      "sources": [
+        "04_exam_rules_and_faq.txt"
+      ],
+      "latency_ms": 0.06779993418604136
+    }
+  ],
+  "student_runtime_counters": {
+    "total_questions": 0,
+    "gemini_api_calls": 0,
+    "cache_hits": 0
+  }
+}

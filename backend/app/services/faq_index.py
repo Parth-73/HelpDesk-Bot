@@ -29,6 +29,19 @@ def rank(question,vector,rows,matrix):
     return Match(top[0],top[1],top[1]-runner,'ranked')
 
 
+def rank_candidates(vector, rows, matrix, limit=5):
+    """Top distinct FAQs across canonical questions and approved paraphrases.
+
+    These are discovery candidates, never permission to serve an answer. The
+    calibrated qualifier/score/margin decision above remains unchanged.
+    """
+    scores={}
+    for row, score in zip(rows, matrix @ vector):
+        key=row['faq_id']
+        scores[key]=max(float(score),scores.get(key,-1))
+    return sorted(scores.items(),key=lambda item:(-item[1],item[0]))[:limit]
+
+
 def calibrate(cases,encoder,rows,matrix):
     if len(cases)<8 or not any(c['expected_faq_id'] for c in cases) or not any(c['expected_faq_id'] is None for c in cases):
         raise ValueError('Calibration requires at least eight reviewed positive and hard-negative cases')

@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "rapid typing produces one debounced request",
+    "up to five live approved FAQ options",
+    "click fills input without submitting",
+    "selection closes dropdown",
+    "Arrow Down highlights a suggestion",
+    "Enter selects highlighted option without sending",
+    "second Enter sends exactly once",
+    "Shift Enter preserves multiline input",
+    "Escape closes suggestions",
+    "Tab retains normal focus navigation",
+    "obsolete responses cannot replace current suggestions",
+    "suggestion API failures do not disrupt chat",
+    "empty input hides suggestions",
+    "mobile has no horizontal overflow",
+    "mobile dropdown fits above composer",
+    "touch selection fills input without submitting",
+    "small viewport keeps composer and dropdown visible",
+    "no browser runtime errors",
+    "changed knowledge version clears old suggestions for unchanged focused input"
+  ],
+  "passed": 19,
+  "chat_requests": 1,
+  "real_gemini_calls": 0,
+  "notes": "Real suggestions API backed by approved live FAQs; chat submissions intercepted for UI verification. Mobile viewport checks do not emulate a native OS keyboard."
+}

@@ -1,0 +1,8 @@
+{
+  "frontend": "http://localhost:5173",
+  "mocked": false,
+  "answer": "Course assistant\n10:47 AM\n\nDPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan.\n\nSources\n01_course_handbook.txt\nServed from cache",
+  "sources": "Sources\n01_course_handbook.txt",
+  "runtime_errors": [],
+  "result": "passed"
+}

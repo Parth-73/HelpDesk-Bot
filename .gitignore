@@ -9,3 +9,9 @@ node-runtime.zip
 **/.pytest_cache/
 frontend_src/dist/
 backend/model_assets/
+/.vscode/
+/FAQ extractor/
+/SD_Assessment.zip
+/SD_Assessment/SD_Assessment/SD_Assessment.docx
+/frontend_src/*preview.png
+/frontend_src/autocomplete-*.png

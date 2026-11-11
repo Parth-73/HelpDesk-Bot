@@ -1,0 +1,106 @@
+{
+  "scope": "Running application on localhost:8000, configured PostgreSQL and real ONNX FAQ index, no Gemini generation required for these requests",
+  "results": [
+    {
+      "question": "What to study?",
+      "status": 200,
+      "elapsed_ms": 8687,
+      "response": {
+        "answer_path": "deterministic",
+        "answer": "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan.",
+        "sources": [
+          "01_course_handbook.txt"
+        ],
+        "cached": false,
+        "session_id": "492a264c-eb9c-4af7-9a2a-236e4d55eaf3"
+      }
+    },
+    {
+      "question": "What should I study?",
+      "status": 200,
+      "elapsed_ms": 6673,
+      "response": {
+        "answer_path": "deterministic",
+        "answer": "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan.",
+        "sources": [
+          "01_course_handbook.txt"
+        ],
+        "cached": false,
+        "session_id": "e5176da5-e328-4918-814b-6c04a5046544"
+      }
+    },
+    {
+      "question": "What should I prepare?",
+      "status": 200,
+      "elapsed_ms": 6402,
+      "response": {
+        "answer_path": "deterministic",
+        "answer": "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan. If you mean preparation for a particular assessment, please say which one.",
+        "sources": [
+          "01_course_handbook.txt"
+        ],
+        "cached": false,
+        "session_id": "cffda46f-561d-4fbf-9cb8-92cecc8d1c54"
+      }
+    },
+    {
+      "question": "What's the course about?",
+      "status": 200,
+      "elapsed_ms": 6653,
+      "response": {
+        "answer_path": "deterministic",
+        "answer": "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan.",
+        "sources": [
+          "01_course_handbook.txt"
+        ],
+        "cached": false,
+        "session_id": "821583b8-1a1e-40e4-99c1-fac15b9db5df"
+      }
+    },
+    {
+      "question": "What topics are covered?",
+      "status": 200,
+      "elapsed_ms": 8241,
+      "response": {
+        "answer_path": "deterministic",
+        "answer": "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan.",
+        "sources": [
+          "01_course_handbook.txt"
+        ],
+        "cached": false,
+        "session_id": "4d37305d-04da-453b-899e-b6a4df2a0895"
+      }
+    },
+    {
+      "question": "What topics are covered in the DPM-101 course?",
+      "status": 200,
+      "elapsed_ms": 6606,
+      "response": {
+        "answer_path": "deterministic",
+        "answer": "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan.",
+        "sources": [
+          "01_course_handbook.txt"
+        ],
+        "cached": false,
+        "session_id": "f3d92b34-b0dd-45b4-8be0-97eeaf12c3e3"
+      }
+    },
+    {
+      "question": "How do I get a refund?",
+      "status": 200,
+      "elapsed_ms": 6483,
+      "response": {
+        "answer_path": "abstention",
+        "answer": "This information is not mentioned in the official DPM-101 course documents. Please contact the course team for clarification.",
+        "sources": [],
+        "cached": false,
+        "session_id": "867e75ca-e287-4aa3-9e1c-357e64c32a62"
+      }
+    }
+  ],
+  "counter_delta": {
+    "total_questions": 7,
+    "gemini_api_calls": 0,
+    "cache_hits": 0
+  }
+}

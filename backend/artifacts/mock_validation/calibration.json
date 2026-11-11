@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What score must I achieve to pass the course?",
+    "expected_faq_id": "cc930330-b338-5814-9b24-945ae5f3565e",
+    "category": "paraphrase"
+  },
+  {
+    "question": "How much must I score in my final examination?",
+    "expected_faq_id": "41d33f2c-9cc9-5e62-bbf5-801c6cc4871a",
+    "category": "scope"
+  },
+  {
+    "question": "Can I pass with 70% overall and 35% in the final?",
+    "expected_faq_id": "d5c221d5-4295-59e9-8ab5-2c4aca336e03",
+    "category": "conditional"
+  },
+  {
+    "question": "Is the final exam open-book?",
+    "expected_faq_id": "a6d6af5c-97a2-59ae-85e0-0882b21def21",
+    "category": "paraphrase"
+  },
+  {
+    "question": "Can I take the exam on an iPad?",
+    "expected_faq_id": "759387eb-6c6a-53f8-9e14-16dc59758556",
+    "category": "paraphrase"
+  },
+  {
+    "question": "What is the deadline for the capstone?",
+    "expected_faq_id": "d9bf3d99-d4ab-59ba-bb1c-7a874bffcfd4",
+    "category": "paraphrase"
+  },
+  {
+    "question": "Do I not have to pass the final examination?",
+    "expected_faq_id": null,
+    "category": "negation"
+  },
+  {
+    "question": "What was the passing threshold in January 2026?",
+    "expected_faq_id": null,
+    "category": "historical"
+  },
+  {
+    "question": "Who won the cricket match last night?",
+    "expected_faq_id": null,
+    "category": "off_topic"
+  },
+  {
+    "question": "Can I pass with 70% overall and 45% in the final?",
+    "expected_faq_id": null,
+    "category": "conditional"
+  },
+  {
+    "question": "Tell me about everything",
+    "expected_faq_id": null,
+    "category": "ambiguous"
+  },
+  {
+    "question": "What is the maximum final exam score?",
+    "expected_faq_id": null,
+    "category": "scope"
+  }
+]

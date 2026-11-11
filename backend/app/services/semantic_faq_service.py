@@ -4,14 +4,22 @@ import logging
 import re
 import time
 import psutil
+from dataclasses import dataclass
 from .faq_embeddings import OnnxEncoder
-from .faq_index import rank,decode_index,MATCH_VERSION
+from .faq_index import rank,rank_candidates,decode_index,MATCH_VERSION
 from .faq_repository import FAQRepository
 from .faq_validator import validate_faq
 from .cache_service import Answer
 from ..utils.normalization import normalize
 
 logger=logging.getLogger(__name__)
+
+
+@dataclass(frozen=True)
+class FAQSearch:
+    answer: object = None
+    candidates: tuple = ()
+    reason: str = 'no_active_index'
 
 
 class SemanticFAQService:
@@ -72,20 +80,37 @@ class SemanticFAQService:
         return None
 
     async def match(self,question,context):
+        return (await self.search(question,context)).answer
+
+    async def search(self,question,context):
         await self.refresh()
-        if not self.entries: return None
+        if not self.entries: return FAQSearch()
         resolved=self.resolve_question(question,context)
-        if not resolved: return None
-        exact={r['faq_id'] for r in self.rows if normalize(r['text'])==normalize(resolved)}
-        if len(exact)==1: return self.answer(next(iter(exact)))
-        vector=await self.encode_query(resolved)
-        if vector is None: return None
+        # Contextual queries may still discover passages, but cannot bypass the
+        # existing conservative contextual FAQ-answer gate.
+        discovery=resolved or ' '.join(context[-1:]+[question])
+        exact={r['faq_id'] for r in self.rows if resolved and normalize(r['text'])==normalize(resolved)}
+        if resolved and len(exact)==1: return FAQSearch(self.answer(next(iter(exact))),reason='exact_formulation')
+        vector=await self.encode_query(discovery)
+        if vector is None: return FAQSearch(reason='encoder_unavailable')
+        candidates=tuple(rank_candidates(vector,self.rows,self.matrix))
+        if not resolved:return FAQSearch(candidates=candidates,reason='context_requires_retrieval')
         result=rank(resolved,vector,self.rows,self.matrix)
         calibration=self.index['calibration']
-        if calibration['decision_version']!=MATCH_VERSION: return None
+        if calibration['decision_version']!=MATCH_VERSION: return FAQSearch(candidates=candidates,reason='calibration_version')
         if result.faq_id and result.score>=calibration['threshold'] and result.margin>=calibration['margin']:
-            return self.answer(result.faq_id)
-        return None
+            return FAQSearch(self.answer(result.faq_id),candidates,'calibrated_match')
+        reason=result.reason if not result.faq_id else 'below_threshold' if result.score<calibration['threshold'] else 'ambiguous_margin'
+        return FAQSearch(candidates=candidates,reason=reason)
+
+    def passage_hints(self,candidates):
+        """Only validated active entries supply IDs; low scores are not answer confidence."""
+        hints={}
+        for faq_id,score in candidates:
+            entry=self.entries.get(faq_id)
+            if entry is not None:
+                for source_id in entry.source_ids:hints[source_id]=max(score,hints.get(source_id,0))
+        return hints
 
     async def encode_query(self,question):
         """One shared ONNX session and bounded worker for chat and autocomplete."""

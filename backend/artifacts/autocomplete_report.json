@@ -1,0 +1,294 @@
+{
+  "approved_faqs_indexed": 23,
+  "semantic_mode": "onnx_semantic",
+  "cold_refresh_ms": 3448.3910999260843,
+  "uncached_warm_service_latency": {
+    "prefix": {
+      "median_ms": 0.21269998978823423,
+      "max_ms": 7.813600008375943,
+      "samples": 15
+    },
+    "lexical": {
+      "median_ms": 6.331250013317913,
+      "max_ms": 8.095200057141483,
+      "samples": 30
+    },
+    "semantic": {
+      "median_ms": 11.293749965261668,
+      "max_ms": 13.053399976342916,
+      "samples": 20
+    }
+  },
+  "process_rss_mb": 144.39453125,
+  "runtime_usage_counters_unchanged": true,
+  "gemini_calls": 0,
+  "results": {
+    "wh": [
+      {
+        "faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "question": "What is the date and time for the official proctored final exam?",
+        "topic": "Exam Schedule"
+      },
+      {
+        "faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "question": "What is the deadline for the Capstone Product Case Submission?",
+        "topic": "Capstone Deadline"
+      },
+      {
+        "faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+        "question": "Are late submissions accepted for weekly quizzes or the capstone case?",
+        "topic": "Late Submission Policy"
+      },
+      {
+        "faq_id": "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "question": "How can a learner achieve a 'Pass with Distinction' badge?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "question": "How many weekly quizzes can be missed without penalty?",
+        "topic": "Weekly Quizzes"
+      }
+    ],
+    "what is the": [
+      {
+        "faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+        "question": "Are late submissions accepted for weekly quizzes or the capstone case?",
+        "topic": "Late Submission Policy"
+      },
+      {
+        "faq_id": "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "question": "How can a learner achieve a 'Pass with Distinction' badge?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "dbd03385-52d9-54f9-8375-ea1162c851b4",
+        "question": "How quickly do teaching assistants respond in the DPM-101 discussion forum?",
+        "topic": "Course Structure"
+      },
+      {
+        "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "question": "What are the passing requirements for the Verified Certificate?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "question": "What is the cost of the Verified Certificate Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      }
+    ],
+    "what is the duration": [
+      {
+        "faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "question": "What is the duration of the final exam?",
+        "topic": "Exam Format"
+      },
+      {
+        "faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "question": "What is the duration of the DPM-101 course?",
+        "topic": "Course Structure"
+      }
+    ],
+    "final exam": [
+      {
+        "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "question": "What are the passing requirements for the Verified Certificate?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "question": "What are the technical requirements for taking the proctored final exam?",
+        "topic": "Technical Requirements"
+      },
+      {
+        "faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "question": "What is the date and time for the official proctored final exam?",
+        "topic": "Exam Schedule"
+      },
+      {
+        "faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "question": "What is the duration of the final exam?",
+        "topic": "Exam Format"
+      },
+      {
+        "faq_id": "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "question": "What is the format of the final exam?",
+        "topic": "Exam Format"
+      }
+    ],
+    "exam duration": [
+      {
+        "faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "question": "What is the duration of the final exam?",
+        "topic": "Exam Format"
+      },
+      {
+        "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "question": "What are the passing requirements for the Verified Certificate?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "question": "What are the technical requirements for taking the proctored final exam?",
+        "topic": "Technical Requirements"
+      },
+      {
+        "faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "question": "What is the date and time for the official proctored final exam?",
+        "topic": "Exam Schedule"
+      },
+      {
+        "faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "question": "What is the duration of the DPM-101 course?",
+        "topic": "Course Structure"
+      }
+    ],
+    "passing marks": [
+      {
+        "faq_id": "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "question": "How can a learner achieve a 'Pass with Distinction' badge?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "question": "What are the passing requirements for the Verified Certificate?",
+        "topic": "Grading Policy"
+      }
+    ],
+    "capstone deadline": [
+      {
+        "faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "question": "What is the deadline for the Capstone Product Case Submission?",
+        "topic": "Capstone Deadline"
+      },
+      {
+        "faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+        "question": "Are late submissions accepted for weekly quizzes or the capstone case?",
+        "topic": "Late Submission Policy"
+      },
+      {
+        "faq_id": "051d8379-2490-5e68-9feb-360f8500bec4",
+        "question": "What is the deadline for upgrading from the Audit Track to the Verified Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      },
+      {
+        "faq_id": "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+        "question": "What is the penalty for late submissions under the current policy?",
+        "topic": "Late Submission Policy"
+      }
+    ],
+    "late submission": [
+      {
+        "faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+        "question": "Are late submissions accepted for weekly quizzes or the capstone case?",
+        "topic": "Late Submission Policy"
+      },
+      {
+        "faq_id": "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+        "question": "What is the penalty for late submissions under the current policy?",
+        "topic": "Late Submission Policy"
+      },
+      {
+        "faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "question": "What is the deadline for the Capstone Product Case Submission?",
+        "topic": "Capstone Deadline"
+      }
+    ],
+    "capstnoe deadlin": [
+      {
+        "faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "question": "What is the deadline for the Capstone Product Case Submission?",
+        "topic": "Capstone Deadline"
+      },
+      {
+        "faq_id": "051d8379-2490-5e68-9feb-360f8500bec4",
+        "question": "What is the deadline for upgrading from the Audit Track to the Verified Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      },
+      {
+        "faq_id": "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+        "question": "What is the penalty for late submissions under the current policy?",
+        "topic": "Late Submission Policy"
+      }
+    ],
+    "how much should i score to clear": [
+      {
+        "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "question": "What are the passing requirements for the Verified Certificate?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "question": "How can a learner achieve a 'Pass with Distinction' badge?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "question": "What is the weighting of each assessment component?",
+        "topic": "Assessment Weights"
+      }
+    ],
+    "verified certificate fee": [
+      {
+        "faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "question": "What is the cost of the Verified Certificate Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      },
+      {
+        "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "question": "What are the passing requirements for the Verified Certificate?",
+        "topic": "Grading Policy"
+      },
+      {
+        "faq_id": "e1d27d46-190c-5581-8096-582d32da53e3",
+        "question": "What is included in the Verified Certificate Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      },
+      {
+        "faq_id": "051d8379-2490-5e68-9feb-360f8500bec4",
+        "question": "What is the deadline for upgrading from the Audit Track to the Verified Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      },
+      {
+        "faq_id": "e665966d-599d-51cf-853c-995934a478f3",
+        "question": "What is the difference between the Audit Track and the Verified Certificate Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      }
+    ],
+    "can i use notes": [
+      {
+        "faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+        "question": "What materials are allowed during the closed-book final exam?",
+        "topic": "Exam Rules"
+      },
+      {
+        "faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "question": "What are the technical requirements for taking the proctored final exam?",
+        "topic": "Technical Requirements"
+      },
+      {
+        "faq_id": "b09b5b2d-cf88-51be-b020-a46c7d2ab02d",
+        "question": "Can I get a certificate if I only use the Audit Track for DPM-101?",
+        "topic": "Certificate Tracks"
+      },
+      {
+        "faq_id": "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "question": "What is the format of the final exam?",
+        "topic": "Exam Format"
+      }
+    ],
+    "minimum internet speed": [
+      {
+        "faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "question": "What are the technical requirements for taking the proctored final exam?",
+        "topic": "Technical Requirements"
+      }
+    ]
+  },
+  "scope": "Single local process, live approved FAQ snapshot, warm uncached service timings; excludes HTTP/network latency and does not establish hosting capacity.",
+  "warm_loopback_http_prefix_latency": {
+    "median_ms": 2.3717000149190426,
+    "max_ms": 4.075899953022599,
+    "samples": 20
+  }
+}

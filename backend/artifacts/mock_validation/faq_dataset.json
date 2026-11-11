@@ -1,0 +1,387 @@
+{
+  "snapshot_id": "fe247681150088b96d660111666dd08bd54de1080c126d95ca7bb820ce81ce2b",
+  "faqs": [
+    {
+      "faq_id": "d9bf3d99-d4ab-59ba-bb1c-7a874bffcfd4",
+      "canonical_question": "What is the deadline for the capstone?",
+      "answer": "The Capstone Product Case deadline has been extended by 5 days to 15 November 2026, 11:59 PM IST.",
+      "paraphrases": [
+        "When is the Capstone Product Case due?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:3"
+      ],
+      "evidence_quotes": [
+        "The Capstone Product Case deadline has been extended by 5 days to 15 November 2026, 11:59 PM IST."
+      ],
+      "topic": "deadline",
+      "question_type": "deadline",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:3",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "e3d85a548182f52ce93188a3852932916367e5648a1126881383daea8a0e3349",
+      "review": {
+        "faq_id": "d9bf3d99-d4ab-59ba-bb1c-7a874bffcfd4",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "e3d85a548182f52ce93188a3852932916367e5648a1126881383daea8a0e3349"
+      }
+    },
+    {
+      "faq_id": "759387eb-6c6a-53f8-9e14-16dc59758556",
+      "canonical_question": "Can I take the exam on an iPad?",
+      "answer": "Desktop or laptop computer with a working webcam and microphone (mobile phones and tablets are not supported for taking the proctored exam).",
+      "paraphrases": [
+        "Can I use my mobile phone to take the proctored exam?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:2"
+      ],
+      "evidence_quotes": [
+        "Desktop or laptop computer with a working webcam and microphone (mobile phones and tablets are not supported for taking the proctored exam)."
+      ],
+      "topic": "technical",
+      "question_type": "eligibility",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:2",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "aa607f2836e14013265012546f1a0f80dfb3abd5a4c88fbf2922a6da48fe5430",
+      "review": {
+        "faq_id": "759387eb-6c6a-53f8-9e14-16dc59758556",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "aa607f2836e14013265012546f1a0f80dfb3abd5a4c88fbf2922a6da48fe5430"
+      }
+    },
+    {
+      "faq_id": "d5c221d5-4295-59e9-8ab5-2c4aca336e03",
+      "canonical_question": "Can I pass with 70% overall and 35% in the final?",
+      "answer": "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold), AND must score at least 40% in the Proctored Final Exam separately.",
+      "paraphrases": [
+        "Can I get certified with 70% overall and 35% on the final exam?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold), AND must score at least 40% in the Proctored Final Exam separately."
+      ],
+      "topic": "passing",
+      "question_type": "conditional",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "48226bd8b1aac56b0193853232fa1833a7bd8e90a6d5669b310395852686b5f9",
+      "review": {
+        "faq_id": "d5c221d5-4295-59e9-8ab5-2c4aca336e03",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "48226bd8b1aac56b0193853232fa1833a7bd8e90a6d5669b310395852686b5f9"
+      }
+    },
+    {
+      "faq_id": "c7072b0d-0052-5477-b9be-84f53c1c928c",
+      "canonical_question": "When is the final exam scheduled?",
+      "answer": "Exam Date: 20 November 2026 (Slots available between 10:00 AM and 8:00 PM IST)",
+      "paraphrases": [
+        "What date is the proctored final examination?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:1"
+      ],
+      "evidence_quotes": [
+        "Exam Date: 20 November 2026 (Slots available between 10:00 AM and 8:00 PM IST)"
+      ],
+      "topic": "exam",
+      "question_type": "deadline",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:1",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "00dc215024c61c03782afdf1b7c3dc46c26c9bb9f7a6821558ad6d6fcb09c31a",
+      "review": {
+        "faq_id": "c7072b0d-0052-5477-b9be-84f53c1c928c",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "00dc215024c61c03782afdf1b7c3dc46c26c9bb9f7a6821558ad6d6fcb09c31a"
+      }
+    },
+    {
+      "faq_id": "a6d6af5c-97a2-59ae-85e0-0882b21def21",
+      "canonical_question": "Is the final exam open-book?",
+      "answer": "Closed-Book Rule: The exam is strictly CLOSED-BOOK. Learners may NOT use course notes, external websites, search engines, or AI tools during the exam. Only a blank sheet of rough paper and a basic physical calculator are permitted on the desk.",
+      "paraphrases": [
+        "Can I use Google during the examination?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:1"
+      ],
+      "evidence_quotes": [
+        "Closed-Book Rule: The exam is strictly CLOSED-BOOK. Learners may NOT use course notes, external websites, search engines, or AI tools during the exam. Only a blank sheet of rough paper and a basic physical calculator are permitted on the desk."
+      ],
+      "topic": "exam",
+      "question_type": "misunderstanding",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:1",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "e9b4542f2fd8155afc8e5cc6f3e885b32a302ac86fe07bb2e24f12c9f1cced36",
+      "review": {
+        "faq_id": "a6d6af5c-97a2-59ae-85e0-0882b21def21",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "e9b4542f2fd8155afc8e5cc6f3e885b32a302ac86fe07bb2e24f12c9f1cced36"
+      }
+    },
+    {
+      "faq_id": "0cceef7e-9da7-5a07-b3a7-8917246bb1af",
+      "canonical_question": "Are late submissions accepted?",
+      "answer": "Late submissions are NO LONGER accepted for weekly quizzes or the capstone case. The earlier 48-hour grace window with a 10% penalty has been discontinued.",
+      "paraphrases": [
+        "Can I submit the capstone two days late?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:2"
+      ],
+      "evidence_quotes": [
+        "Late submissions are NO LONGER accepted for weekly quizzes or the capstone case. The earlier 48-hour grace window with a 10% penalty has been discontinued."
+      ],
+      "topic": "late",
+      "question_type": "exception",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:2",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "d4513020035adb4d9e9da1e957f8dbb7baa56507d836ef0ec25e332e34c31863",
+      "review": {
+        "faq_id": "0cceef7e-9da7-5a07-b3a7-8917246bb1af",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "d4513020035adb4d9e9da1e957f8dbb7baa56507d836ef0ec25e332e34c31863"
+      }
+    },
+    {
+      "faq_id": "41d33f2c-9cc9-5e62-bbf5-801c6cc4871a",
+      "canonical_question": "How much must I score in the final examination?",
+      "answer": "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold), AND must score at least 40% in the Proctored Final Exam separately.",
+      "paraphrases": [
+        "What is the minimum final exam score?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold), AND must score at least 40% in the Proctored Final Exam separately."
+      ],
+      "topic": "passing",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "97b10212d59bacad7300dca845856af5c0cdbb2c1c526008b99159b21605a3a9",
+      "review": {
+        "faq_id": "41d33f2c-9cc9-5e62-bbf5-801c6cc4871a",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "97b10212d59bacad7300dca845856af5c0cdbb2c1c526008b99159b21605a3a9"
+      }
+    },
+    {
+      "faq_id": "7e4cd4ae-5c40-5b8c-b594-7066d820a5d3",
+      "canonical_question": "How much does the Verified Certificate track cost?",
+      "answer": "Verified Certificate Track (Rs. 1,500): Full access to graded quizzes, capstone evaluation, the proctored final exam, and the official Verified Certificate upon passing.",
+      "paraphrases": [
+        "What does the certificate cost?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Verified Certificate Track (Rs. 1,500): Full access to graded quizzes, capstone evaluation, the proctored final exam, and the official Verified Certificate upon passing."
+      ],
+      "topic": "tracks",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "f517e76a1b78dd076c3a69297b4756003481c3a7f1831ce57fe4c6ae1d0e8615",
+      "review": {
+        "faq_id": "7e4cd4ae-5c40-5b8c-b594-7066d820a5d3",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "f517e76a1b78dd076c3a69297b4756003481c3a7f1831ce57fe4c6ae1d0e8615"
+      }
+    },
+    {
+      "faq_id": "938123af-3542-57bc-9189-21a28cf37ea3",
+      "canonical_question": "What is the course name?",
+      "answer": "COURSE: IIMBx - Digital Product Management (DPM-101)",
+      "paraphrases": [
+        "What is this course called?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:header"
+      ],
+      "evidence_quotes": [
+        "COURSE: IIMBx - Digital Product Management (DPM-101)"
+      ],
+      "topic": "course_identity",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:header",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "c308bd79a8101c4d5548dfe9ad3a77856a7d836e754eb62b187ccc0cfe142242",
+      "review": {
+        "faq_id": "938123af-3542-57bc-9189-21a28cf37ea3",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "c308bd79a8101c4d5548dfe9ad3a77856a7d836e754eb62b187ccc0cfe142242"
+      }
+    },
+    {
+      "faq_id": "cc930330-b338-5814-9b24-945ae5f3565e",
+      "canonical_question": "What percentage do I need to pass?",
+      "answer": "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold), AND must score at least 40% in the Proctored Final Exam separately.",
+      "paraphrases": [
+        "How much do I need to score to pass DPM-101?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold), AND must score at least 40% in the Proctored Final Exam separately."
+      ],
+      "topic": "passing",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "d6936f4aeab037611f757e67cc7df89f48083df50f3e61b55f9ff81b3c23eded",
+      "review": {
+        "faq_id": "cc930330-b338-5814-9b24-945ae5f3565e",
+        "decision": "approved",
+        "reviewer": "Automated test fixture reviewer",
+        "rationale": "Synthetic fixture checked against complete official evidence for test only.",
+        "content_hash": "d6936f4aeab037611f757e67cc7df89f48083df50f3e61b55f9ff81b3c23eded"
+      }
+    }
+  ],
+  "mode": "mocked_validation_only",
+  "note": "Test fixtures and test-only review decisions in an isolated, deleted PostgreSQL schema. Not a live-generated or production-approved FAQ dataset."
+}
