@@ -6,7 +6,7 @@ No policy values live here: this module classifies questions, not answers.
 import re
 from ..utils.normalization import normalize
 
-VERSION = 'bounded-intents-v1'
+VERSION = 'bounded-intents-v2'
 
 # Closed vocabulary deliberately excludes unsupported modifiers such as extra,
 # scientific, refund, questions, instructors, retakes and accommodations.
@@ -61,6 +61,11 @@ def intent(text):
         if exam and not capstone and not quiz: found.add('exam_duration')
         elif course and not capstone and not quiz: found.add('course_duration')
     date = bool(re.search(r'\b(when|deadline|due|date|scheduled)\b', q))
+    # A standalone deadline has no proven assessment referent. In compound
+    # requests it must remain a retrieval facet, not disappear into another
+    # recognized intent such as the syllabus.
+    if re.search(r'\b(deadlines?|due)\b',q) and not capstone and not exam:return None
+    if date and capstone and exam:return None
     if date and capstone: found.add('capstone_deadline')
     if date and exam and not capstone: found.add('exam_date')
     if re.search(r'\b(pass|passing|clear)\b|earn.*certificate|(?:need|requirements|conditions).*certificate', q):

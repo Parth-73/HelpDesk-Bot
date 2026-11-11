@@ -1,5 +1,5 @@
 {
-  "equivalence_version": "bounded-intents-v1",
+  "equivalence_version": "bounded-intents-v2",
   "model_fingerprint": "78a3a673fef6661621c371b614d190fd9d99ea5efb9e5bddeb7534bd77ae11bf",
   "threshold": 0.26285940408706665,
   "margin": 0.26285940408706665,

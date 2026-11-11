@@ -33,9 +33,11 @@ def resolve_conversation(question,history,relevant_context):
             candidate=assessment_subject(message.content)
             if candidate:
                 subject=candidate;break
-    resolved=question
+    # Correct only an observed, unambiguous spelling error. Never use fuzzy
+    # correction for entities, numerical conditions, negation or policy scope.
+    resolved=re.sub(r'\bdeadine(s)?\b',lambda m:'deadline'+(m.group(1) or ''),question,flags=re.I)
     if dependent and subject and not current:
-        resolved=f'{question}\nReferenced assessment: {subject}.'
+        resolved=f'{resolved}\nReferenced assessment: {subject}.'
     # Resolve common elliptical requests using the latest exchange only. The
     # prior user turn sets scope; assistant prose supplies referents, not facts.
     previous=users[-1] if users else ''
@@ -69,4 +71,5 @@ def resolve_conversation(question,history,relevant_context):
     # Prior assistant statements identify referents only; never become course policy evidence.
     elliptical=bool(re.search(r'^\s*(?:when is it|how much|can i skip (?:one|it)|what about it|(?:and )?how long)\s*\??$',question,re.I))
     unresolved=elliptical and resolved==question
-    return ResolvedContext(resolved,context,subject,unresolved)
+    fragment=bool(re.fullmatch(r'\s*(?:what|which|who|where|when|how)(?:\s+(?:is|are|the|a|an))*\s*[?!.]*\s*',question,re.I)) and resolved==question
+    return ResolvedContext(resolved,context,subject,unresolved or fragment)

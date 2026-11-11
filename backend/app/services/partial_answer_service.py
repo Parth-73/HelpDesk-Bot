@@ -10,6 +10,15 @@ def supported_portion(question,passages,kb):
         selected=[p for p in passages if p.topic=='overview']
         if selected:
             boundary='These are the documented course topics; they do not establish a detailed examination syllabus or a study plan.'
+            # Preserve both supported facets of a compound question. A syllabus
+            # match must not silently discard an explicitly requested deadline.
+            if re.search(r'\b(deadlines?|due)\b',question,re.I):
+                if re.search(r'\b(final|exam|examination)\b',question,re.I) and not re.search(r'\bcapstone\b',question,re.I):
+                    # Exam date is documented; a separate exam submission
+                    # deadline is not. Do not substitute the capstone deadline.
+                    boundary+=' A separate final-exam submission deadline is not specified.'
+                else:
+                    selected=[p for p in passages if p.topic=='deadline']+selected
             if re.search(r'\bprepar',question,re.I):
                 boundary+=' If you mean preparation for a particular assessment, please say which one.'
     elif re.search(r'\bfail(?:s|ed|ing)?\b',question,re.I) and re.search(r'\b(final|exam)\b',question,re.I):

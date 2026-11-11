@@ -94,7 +94,7 @@ class ChatService:
                 if abstention:
                     diagnostic('document_retrieval','abstention')
                     return Answer(abstention, (), origin='abstention')
-                partial=supported_portion(request.question,passages,self.kb)
+                partial=supported_portion(resolution.retrieval_question,passages,self.kb)
                 if partial is not None:
                     diagnostic('evidence','supported_portion',sources=partial.filenames)
                     return partial

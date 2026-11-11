@@ -48,6 +48,13 @@ class GeneratedAnswer(BaseModel):
     quotes: list[EvidenceQuote] = Field(max_length=8)
 
 
+class EvidenceSelection(BaseModel):
+    """Gemini selects existing evidence IDs; the server supplies exact text."""
+    model_config = ConfigDict(extra='forbid')
+    supported: bool
+    line_ids: list[str] = Field(max_length=8)
+
+
 class QuestionSuggestion(BaseModel):
     faq_id: UUID
     question: str

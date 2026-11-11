@@ -1,7 +1,7 @@
 """HTTP smoke test for a disposable deployment; never consumes Gemini quota.
 
 Run only with a dedicated smoke-test database. This creates one session and
-three real question records. CI uses an explicitly nonfunctional Gemini key.
+five real question records. CI uses an explicitly nonfunctional Gemini key.
 """
 import json
 import sys
@@ -44,4 +44,11 @@ after = request('/api/stats')
 assert after['total_questions'] - before['total_questions'] == 3
 assert after['gemini_api_calls'] == before['gemini_api_calls']
 assert after['cache_hits'] - before['cache_hits'] == 1
+compound=ask('what is the deadine and syllabus')
+assert '15 November 2026' in compound['answer'] and 'user research' in compound['answer']
+assert set(compound['sources'])=={'03_grading_policy_v2.txt','01_course_handbook.txt'}
+fragment=ask('what are the')
+assert fragment['answer_path']=='deterministic' and 'Which' in fragment['answer']
+assert fragment['sources']==[]
+assert request('/api/stats')['gemini_api_calls']==before['gemini_api_calls']
 print('Production frontend, schema, current policy, abstention, cache and counters passed. No live Gemini request was made.')

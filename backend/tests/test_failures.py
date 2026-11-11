@@ -5,7 +5,7 @@ import httpx
 import pytest
 from google.genai import errors
 from app.config import Settings
-from app.models.schemas import GeneratedAnswer, EvidenceQuote
+from app.models.schemas import GeneratedAnswer, EvidenceQuote, EvidenceSelection
 from app.services.gemini_service import GeminiService
 from app.services.cache_service import validate_answer
 from app.utils.exceptions import ServiceError
@@ -33,7 +33,7 @@ async def test_gemini_retries_count_attempts_and_honor_retry_after(kb,monkeypatc
     response=httpx.Response(429,headers={'Retry-After':'3'})
     limited=errors.ClientError(429,{'error':{'message':'busy'}},response=response)
     p=kb.passages[0]
-    output=GeneratedAnswer(answer='safe',supported=True,source_ids=[p.id],quotes=[EvidenceQuote(source_id=p.id,text=p.text.splitlines()[0])])
+    output=EvidenceSelection(supported=True,line_ids=[f'{p.id}/line1'])
     method=AsyncMock(side_effect=[limited,SimpleNamespace(text=output.model_dump_json())])
     count=AsyncMock()
     service=GeminiService(Settings(gemini_max_retries=2),count)
