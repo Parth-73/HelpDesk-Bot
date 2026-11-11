@@ -17,7 +17,7 @@ Updated 11 November 2026. See [the assessment checklist](../ASSESSMENT_CHECKLIST
 | R11 Errors | Mock 429/500/network/timeout/malformed output, Retry-After, DB failure | Pass |
 | R12 Hosting | Production image/PostgreSQL smoke check, public readiness and source-cited live Gemini answer | Pass; https://dpm-101-helpdesk.onrender.com/ |
 | R13 Integrity | Original four document SHA-256 values match baseline | Pass |
-| R14 Submission | Public app, repository, README and test evidence available; AI session files excluded at owner request | Full client-exported Markdown conversations still required |
+| R14 Submission | Public app, repository, README, test evidence and two owner-provided original shared-session links available | Shared links in ../ai_sessions/README.md; exported Markdown transcripts not included |
 
 See evaluation_results.json for machine-readable outcomes and evaluation_report.md for methodological limits. FAQ agent review is not independent human review. No live-provider load test or 1,500-user capacity claim is made.
 

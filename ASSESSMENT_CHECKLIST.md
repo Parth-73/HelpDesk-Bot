@@ -51,4 +51,4 @@ This verifies the measured readiness/database workload. It does **not** establis
 
 ## Submission materials
 
-The public app, GitHub code, README, implementation checklist and test reports are available. AI session files were removed from the current repository at the owner's request. The assessment still requests actual client-exported Markdown conversations when AI tools are used; these can be supplied separately with the submission. This remaining submission-artifact step is separate from the functional implementation above.
+The public app, GitHub code, README, implementation checklist and test reports are available. Two original shared conversation links supplied by the owner are listed in [ai_sessions/README.md](ai_sessions/README.md), without edited transcripts or reconstructed summaries. Shared-session links are available for review; actual client-exported Markdown transcripts are not included, and the assessment's requested export format should be checked separately.
