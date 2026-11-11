@@ -1,0 +1,194 @@
+{
+  "snapshot_id": "551311522cba1ba17345526853cafa83b9b7a91aa7d8fd43f57399f789a42d3b",
+  "decisions": [
+    {
+      "faq_id": "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+      "content_hash": "b152c5f461004aac71fd374439f35cad4070a03c8759c45cb14810bef4e791b3",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The current grading policy explicitly awards the distinction badge at 85% or above; the question and each retained paraphrase ask about that badge threshold."
+    },
+    {
+      "faq_id": "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+      "content_hash": "4fb3ead0caae2a1c642a0939220e19f8f437b24262f352e5be0f7c7e00804293",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The current v2 late-work rule expressly discontinues both late submissions and the former 48-hour/10% grace policy; the answer does not present the former penalty as current."
+    },
+    {
+      "faq_id": "6a262ffd-15bb-5810-9cfe-6db1428a6b84",
+      "content_hash": "32532cac857734c5fd88864df83ff6f4667e0d33488ddd8ff4e3c0329d52fd56",
+      "decision": "rejected",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "Rejected: the quotation omits the separate final-exam AND condition. Its valid threshold questions have been attached to the complete eligibility answer instead."
+    },
+    {
+      "faq_id": "e585c17e-d3a1-5d24-b741-21e437b5c59d",
+      "content_hash": "3b3623f00399aad24b55f45b53e7dced95f86f4b9df80ec028d8c736aef7431c",
+      "decision": "rejected",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "Rejected: the quotation is a fragment and the answer omits the overall weighted requirement. Its valid generated questions now use the complete eligibility FAQ."
+    },
+    {
+      "faq_id": "4c1a42f8-e17b-5676-a057-84eea6597e92",
+      "content_hash": "a6266a2fb3c7ec9af157c28dea15b9ae07aedc8e3637df4c2042af8a1f23717e",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook states expected effort of 4 to 5 hours per week; DPM-101 is the verified course identifier, not an unsupported numeric threshold."
+    },
+    {
+      "faq_id": "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+      "content_hash": "771f843195f7d426ba2e2a4920feff3a6f9629b6317ed5f700b9e73d7d7bb5c9",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The official exam format line states online AI proctoring via webcam and microphone. The filename citation was resolved only through its exact complete source line."
+    },
+    {
+      "faq_id": "2f8acbee-477d-54dc-b669-097e49bda588",
+      "content_hash": "2649f9c353d09189e6be82f2d2b9cf272ce01a98d73034a728d69653b94be9ba",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The official exam ID rule lists a valid government photo ID and Aadhaar, Passport, Driving Licence or PAN before starting; the answer preserves the listed examples and timing."
+    },
+    {
+      "faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+      "content_hash": "9a3e435562e5752081d8e72349d8d8acd3751962099714deae6db38cc2e84696",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook overview explicitly describes DPM-101 as an 8-week online course; all duration paraphrases preserve this scope."
+    },
+    {
+      "faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "content_hash": "7a8acb2598c402bcd18c4e74e62e4970c3a3d100a5ef85e61b03c1d89c057b45",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook Verified Certificate Track line explicitly states Rs. 1,500. The answer and retained paraphrases ask about that track fee, not refund eligibility."
+    },
+    {
+      "faq_id": "f3162ddd-d2f9-5640-8e9f-62a960669bda",
+      "content_hash": "9b01040ea19ba67261132d37a272438acb4c5f06de92e6cdb9d7bb66f12ac1c5",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The Audit Track line grants free videos/readings and excludes graded assignments, the final exam and certificate; all three restrictions remain in the answer."
+    },
+    {
+      "faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+      "content_hash": "9a485f6666a97ffcaf696b08403e2d9e8e49240d3e988324dd7b57a0c930bb8d",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The current v2 rule prohibits late weekly quizzes and capstone work and discontinues the previous grace window; no superseded allowance is treated as valid."
+    },
+    {
+      "faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "content_hash": "afc9f62ad5bd1e917a2cdbd2ebab5a522302fd6f44730649035b143d4ed1b135",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The official exam date line states 20 November 2026 and slots between 10:00 AM and 8:00 PM IST. No forum claim or December date is used."
+    },
+    {
+      "faq_id": "b09b5b2d-cf88-51be-b020-a46c7d2ab02d",
+      "content_hash": "d8ab4e2685457b49e6b2826bc1d550f5197300cc026e911ce42db9ba7842e793",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The Audit Track explicitly excludes a certificate, while the Verified Track provides one upon passing. The answer describes track eligibility without asserting payment alone guarantees certification."
+    },
+    {
+      "faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+      "content_hash": "6c0a7ebba8ba21a82f6c6cbcae698af2568121587dd322439eb5d29bc9610b3c",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "Both complete official technical lines establish desktop/laptop, webcam/microphone, Chrome/Edge, minimum 2 Mbps and unsupported phones/tablets. The answer preserves all constraints."
+    },
+    {
+      "faq_id": "03934813-2625-5319-ab5e-ed6bcb07bb68",
+      "content_hash": "b1050e0c82521b8e75c6b8a1ac2273bb95d217a80ed239843e3f0d2f4d5e0066",
+      "decision": "rejected",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "Rejected: this is a historical-threshold question with an incomplete quotation, not an approved current-policy FAQ."
+    },
+    {
+      "faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+      "content_hash": "eb87e2720730c6bccaf5b4b6f03785da8a22d58ed98afebbc7fc056d88123c7a",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The current v2 quiz exception expressly counts the best five of six and permits missing one without penalty; the answer does not permit unlimited missed quizzes."
+    },
+    {
+      "faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+      "content_hash": "5c0ec38bdb32149af8dd234d27d7c84b932a1d7ba2d9f096b776344f46292c62",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook assessment section supports quizzes 30%, capstone 30%, final exam 40%, and best five of six quizzes; final grade weighting is not confused with the separate exam passing threshold."
+    },
+    {
+      "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "content_hash": "5f70350b27add2f3e2a199f22a170d5af5d76fa096e8697188dadf52b75a00f4",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The full v2 certification line requires at least 60% overall AND at least 40% separately on the final exam. Both remain in the generated answer. Curated variants are Gemini-generated threshold questions answered by this same complete condition."
+    },
+    {
+      "faq_id": "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+      "content_hash": "42f47a1ee37ee88c027d94adb9de09ff0acf488951986d4cc1326fa098d32b1b",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook overview lists user research, product roadmapping, metrics and AI feature design. The unsupported formal-learning-objectives paraphrase was removed before review."
+    },
+    {
+      "faq_id": "051d8379-2490-5e68-9feb-360f8500bec4",
+      "content_hash": "72ba6cdf32bf920188195269b49cccb94cb592fa30b63402e342af1f36310456",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook explicitly permits upgrading from Audit to Verified until the end of Week 4. The answer makes no unsupported conversion to a calendar date."
+    },
+    {
+      "faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "content_hash": "025bfaaaa1396e53f75e21367a619dc9078be0275e0a97598dbc24bd7386093d",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "Current v2 extends the capstone deadline by five days to 15 November 2026 at 11:59 PM IST; the superseded November 10 deadline is not presented as current."
+    },
+    {
+      "faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "content_hash": "0a92c219799c2be81e215cb97d3f4d2f323b25793d3c4a41136cf4cb098524f4",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The official exam duration line is 90 minutes; the answer and both paraphrases preserve exam rather than course duration."
+    },
+    {
+      "faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "content_hash": "027060c18898821800c3b9184ac1b942ffd8d131b747d7cbf0ee1cb41ece4bad",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The complete closed-book rule permits only blank rough paper and a basic physical calculator and forbids notes, websites, search engines and AI tools. The answer preserves all prohibitions."
+    },
+    {
+      "faq_id": "e1d27d46-190c-5581-8096-582d32da53e3",
+      "content_hash": "10dd64b5f2635de91aa1615fa8ebdac3b0874b765ab974915ed4b0d9836713bf",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook supports the Verified Track fee and listed assessment access, with certification only upon passing. The misleading eligibility paraphrase was removed; remaining wording concerns track features."
+    },
+    {
+      "faq_id": "e665966d-599d-51cf-853c-995934a478f3",
+      "content_hash": "8e683ea0b10315dc04522d46e744b870b90453b2cc4da2fb3a46c251b14e5d54",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The comparison preserves the Audit exclusions and the paid Verified Track inclusions and Rs. 1,500 fee; it does not imply the Audit Track includes assessment or a certificate."
+    },
+    {
+      "faq_id": "dbd03385-52d9-54f9-8375-ea1162c851b4",
+      "content_hash": "c71b6a1678e9760611e8833bc5aa845047d7868392ca798112538ef7cb326112",
+      "decision": "approved",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "The handbook Discussion Forum line states teaching-assistant replies within 24 hours; the answer does not confuse response time with the forum being open 24/7."
+    },
+    {
+      "faq_id": "af12c9e8-e09b-5de3-9279-9724054600e3",
+      "content_hash": "067808f4ac93293e1166a5c91cdbe6eeca15d2ab2ac3dec46ff7ea7491bee3cf",
+      "decision": "rejected",
+      "reviewer": "Codex source review (AI agent, not human)",
+      "rationale": "Rejected: assessment access does not establish the complete certification passing criteria, and this answer omits the current 60% overall AND 40% separate final requirements."
+    }
+  ]
+}

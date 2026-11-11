@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-11",
+  "repository": "https://github.com/Parth-73/HelpDesk-Bot",
+  "public_application_url": null,
+  "deployment_status": "Prepared Docker/Render configuration; not deployed: Render connection unavailable.",
+  "backend": {
+    "tests": 112,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "required_questions": {
+    "passed": 20,
+    "total": 20,
+    "mode": "Mocked Gemini complete source-line selections; real retrieval, validation, API and isolated PostgreSQL. Not a live Gemini accuracy evaluation."
+  },
+  "browser": {
+    "checks": [
+      "production mode initializes a server session",
+      "composer disabled during request",
+      "Enter during loading does not duplicate submission",
+      "source citation displayed",
+      "reload reconciles persisted server transcript",
+      "friendly failure shown",
+      "retry retains idempotency key",
+      "retry retains one user message",
+      "no overflow at 320px",
+      "no overflow at 390px",
+      "no overflow at 768px",
+      "no browser runtime errors"
+    ],
+    "errors": [],
+    "scope": "Production Vite bundle, mocked HTTP API; backend behavior tested separately with PostgreSQL."
+  },
+  "load": [
+    {
+      "concurrency": 5,
+      "requests": 5,
+      "errors": 0,
+      "requests_per_second": 10.53,
+      "p50_ms": 255.97,
+      "p95_ms": 473.65,
+      "cache_hit_ratio": 0.8,
+      "gemini_calls": 1,
+      "gemini_call_reduction": 0.8,
+      "scope": "ASGI in-process mocked Gemini; isolated PostgreSQL; one identical question across distinct sessions",
+      "process_rss_mib": 319.98
+    },
+    {
+      "concurrency": 10,
+      "requests": 10,
+      "errors": 0,
+      "requests_per_second": 8.78,
+      "p50_ms": 474.18,
+      "p95_ms": 1135.74,
+      "cache_hit_ratio": 0.9,
+      "gemini_calls": 1,
+      "gemini_call_reduction": 0.9,
+      "scope": "ASGI in-process mocked Gemini; isolated PostgreSQL; one identical question across distinct sessions",
+      "process_rss_mib": 320.57
+    },
+    {
+      "concurrency": 25,
+      "requests": 25,
+      "errors": 0,
+      "requests_per_second": 25.05,
+      "p50_ms": 486.0,
+      "p95_ms": 882.48,
+      "cache_hit_ratio": 0.96,
+      "gemini_calls": 1,
+      "gemini_call_reduction": 0.96,
+      "scope": "ASGI in-process mocked Gemini; isolated PostgreSQL; one identical question across distinct sessions",
+      "process_rss_mib": 321.77
+    },
+    {
+      "concurrency": 50,
+      "requests": 50,
+      "errors": 0,
+      "requests_per_second": 46.48,
+      "p50_ms": 713.99,
+      "p95_ms": 857.45,
+      "cache_hit_ratio": 0.98,
+      "gemini_calls": 1,
+      "gemini_call_reduction": 0.98,
+      "scope": "ASGI in-process mocked Gemini; isolated PostgreSQL; one identical question across distinct sessions",
+      "process_rss_mib": 323.48
+    }
+  ],
+  "original_document_integrity": {
+    "01_course_handbook.txt": true,
+    "02_grading_policy_v1.txt": true,
+    "03_grading_policy_v2.txt": true,
+    "04_exam_rules_and_faq.txt": true
+  },
+  "live_gemini_this_audit": "Not called; existing live extraction evidence retained in artifacts/faq_candidates.",
+  "limits": [
+    "Docker engine unavailable: image build not executed locally.",
+    "Public deployment and hosted smoke tests pending Render connection.",
+    "Mocked load uses identical questions in one process, not diverse real-provider traffic or 1,500 users.",
+    "AI session exports cover the available local logs, not every historical conversation.",
+    "FAQ review was performed by an AI agent, not an independent human."
+  ]
+}

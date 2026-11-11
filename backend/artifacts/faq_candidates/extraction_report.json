@@ -1,0 +1,20 @@
+{
+  "model": "gemini-2.5-flash-lite",
+  "approved": 23,
+  "rejected": 4,
+  "candidate": 0,
+  "batch_count": 3,
+  "snapshot_id": "551311522cba1ba17345526853cafa83b9b7a91aa7d8fd43f57399f789a42d3b",
+  "needs_review": 0,
+  "prompt_version": "faq-extraction-v1",
+  "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+  "duplicates_removed": 0,
+  "documents_processed": 4,
+  "candidates_generated": 27,
+  "authoritative_passages": 10,
+  "semantic_deduplication": true,
+  "gemini_extraction_calls": 7,
+  "untrusted_passages_excluded": 1,
+  "superseded_passages_excluded": 4,
+  "evidence_normalization_version": "exact-filename-evidence-v1"
+}

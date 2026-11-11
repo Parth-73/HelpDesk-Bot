@@ -1,0 +1,70 @@
+{
+  "status": "active",
+  "snapshot_id": "551311522cba1ba17345526853cafa83b9b7a91aa7d8fd43f57399f789a42d3b",
+  "approved_faqs": 23,
+  "semantic_mode": "onnx_semantic",
+  "runtime_gemini_calls_during_verification": 0,
+  "verified_student_response": {
+    "answer": "To receive the Verified Certificate, learners must achieve an overall weighted score of at least 60% and also score at least 40% on the Proctored Final Exam.",
+    "sources": [
+      "03_grading_policy_v2.txt"
+    ],
+    "cached": false,
+    "session_id": "0da2e4ac-1555-406a-b731-8d2b494a9629"
+  },
+  "repeat_question_cached": true,
+  "local_matching_checks": [
+    {
+      "question": "What percentage do I need to pass DPM-101?",
+      "local_faq_match": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ]
+    },
+    {
+      "question": "How much do I need to score in the final examination?",
+      "local_faq_match": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ]
+    },
+    {
+      "question": "When do I have to hand in the capstone case?",
+      "local_faq_match": true,
+      "sources": [
+        "03_grading_policy_v2.txt"
+      ]
+    },
+    {
+      "question": "May I use Google in the final examination?",
+      "local_faq_match": true,
+      "sources": [
+        "04_exam_rules_and_faq.txt"
+      ]
+    },
+    {
+      "question": "Can I sit the exam using an iPad?",
+      "local_faq_match": true,
+      "sources": [
+        "04_exam_rules_and_faq.txt"
+      ]
+    },
+    {
+      "question": "How much is the verified certificate fee?",
+      "local_faq_match": true,
+      "sources": [
+        "01_course_handbook.txt"
+      ]
+    }
+  ],
+  "calibration": {
+    "note": "Empirical operating point on reviewed cases, not a probability or universal accuracy guarantee.",
+    "cases": 19,
+    "margin": 0.042919158935546875,
+    "threshold": 0.654778778553009,
+    "cases_hash": "f8c05f5f0f803b78d935bf3fb1ac539d8ea630fbc904e5f06e8f7f16f09ec839",
+    "false_accepts": 0,
+    "correct_accepts": 9,
+    "decision_version": "qualifiers-and-margin-v1"
+  }
+}

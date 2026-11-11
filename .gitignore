@@ -1,0 +1,11 @@
+﻿.tools/
+node-runtime.zip
+**/.env
+**/.env.local
+**/.env.production
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+frontend_src/dist/
+backend/model_assets/

@@ -1,0 +1,13 @@
+.git
+.tools
+**/.env
+**/.env.*
+**/.venv
+**/__pycache__
+**/node_modules
+**/dist
+backend/model_assets
+backend/artifacts
+ai_sessions
+FAQ extractor
+*.zip

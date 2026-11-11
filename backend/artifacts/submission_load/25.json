@@ -1,0 +1,13 @@
+{
+  "concurrency": 25,
+  "requests": 25,
+  "errors": 0,
+  "requests_per_second": 25.05,
+  "p50_ms": 486.0,
+  "p95_ms": 882.48,
+  "cache_hit_ratio": 0.96,
+  "gemini_calls": 1,
+  "gemini_call_reduction": 0.96,
+  "scope": "ASGI in-process mocked Gemini; isolated PostgreSQL; one identical question across distinct sessions",
+  "process_rss_mib": 321.77
+}

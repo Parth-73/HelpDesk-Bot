@@ -1,0 +1,39 @@
+{
+  "snapshot_id": "551311522cba1ba17345526853cafa83b9b7a91aa7d8fd43f57399f789a42d3b",
+  "changes": [
+    {
+      "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "expected_hash": "47ae3596a811edb652da1875dad6cbd7b4151e0975a9226941ee1f4fa6573afd",
+      "paraphrases": [
+        "What is the minimum overall score needed for the Verified Certificate?",
+        "What is the minimum score required on the final exam to pass?",
+        "What are the conditions for earning a Verified Certificate?",
+        "What is the overall weighted score threshold for the Verified Certificate?",
+        "What is the minimum overall score needed to pass?",
+        "What percentage do I need to get in total to pass the course?",
+        "What is the passing grade for the course?",
+        "What is the minimum score required on the Proctored Final Exam to pass the course?",
+        "What is the passing score for the final exam?",
+        "Is there a minimum score requirement for the final exam?",
+        "How much do I need to get on the final exam to pass?"
+      ],
+      "rationale": "Reused Gemini-generated overall/final threshold questions from rejected incomplete-answer entries; the complete Gemini answer here preserves both 60% overall AND 40% separate-final conditions."
+    },
+    {
+      "faq_id": "e1d27d46-190c-5581-8096-582d32da53e3",
+      "expected_hash": "ca614c7641bcc1991db6337449b8e5f4b245b3b442f10aca258d54a5f29d2b9f",
+      "paraphrases": [
+        "What are the features of the paid Verified Certificate Track for Digital Product Management (DPM-101)?"
+      ],
+      "rationale": "Removed the certification-eligibility paraphrase because this answer describes track access, not the complete passing requirements."
+    },
+    {
+      "faq_id": "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+      "expected_hash": "c55374a15763684329a560348272c33c338890134b697bd38c61f9f487f8012a",
+      "paraphrases": [
+        "What subjects are included in the Digital Product Management (DPM-101) curriculum?"
+      ],
+      "rationale": "Retained the curriculum paraphrase and removed learning-objectives wording, since the source enumerates topics rather than formal learning outcomes."
+    }
+  ]
+}

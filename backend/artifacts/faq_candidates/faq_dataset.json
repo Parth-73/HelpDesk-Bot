@@ -1,0 +1,1090 @@
+{
+  "snapshot_id": "551311522cba1ba17345526853cafa83b9b7a91aa7d8fd43f57399f789a42d3b",
+  "faqs": [
+    {
+      "faq_id": "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+      "canonical_question": "How can a learner achieve a 'Pass with Distinction' badge?",
+      "answer": "Learners who score 85% or above in the course will receive a 'Pass with Distinction' badge.",
+      "paraphrases": [
+        "What score is needed for a 'Pass with Distinction'?",
+        "How do I get a distinction badge?",
+        "What is the criteria for a 'Pass with Distinction'?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "Learners scoring 85% or above still receive a \"Pass with Distinction\" badge."
+      ],
+      "topic": "Grading Policy",
+      "question_type": "eligibility",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "b152c5f461004aac71fd374439f35cad4070a03c8759c45cb14810bef4e791b3",
+      "review": {
+        "faq_id": "e33bb2ce-4301-527d-b764-a19dedd40b4c",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The current grading policy explicitly awards the distinction badge at 85% or above; the question and each retained paraphrase ask about that badge threshold.",
+        "content_hash": "b152c5f461004aac71fd374439f35cad4070a03c8759c45cb14810bef4e791b3"
+      }
+    },
+    {
+      "faq_id": "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+      "canonical_question": "What is the penalty for late submissions under the current policy?",
+      "answer": "Late submissions are no longer accepted for weekly quizzes or the capstone case, and the previous 48-hour grace window with a 10% penalty has been discontinued.",
+      "paraphrases": [
+        "Is there a penalty for submitting late work?",
+        "What happens if I submit after the deadline?",
+        "Are late submissions penalized?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:2"
+      ],
+      "evidence_quotes": [
+        "Late submissions are NO LONGER accepted for weekly quizzes or the capstone case. The earlier 48-hour grace window with a 10% penalty has been discontinued."
+      ],
+      "topic": "Late Submission Policy",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:2",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "4fb3ead0caae2a1c642a0939220e19f8f437b24262f352e5be0f7c7e00804293",
+      "review": {
+        "faq_id": "8c13c058-af76-5b00-9fba-45e0d66d3c49",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The current v2 late-work rule expressly discontinues both late submissions and the former 48-hour/10% grace policy; the answer does not present the former penalty as current.",
+        "content_hash": "4fb3ead0caae2a1c642a0939220e19f8f437b24262f352e5be0f7c7e00804293"
+      }
+    },
+    {
+      "faq_id": "6a262ffd-15bb-5810-9cfe-6db1428a6b84",
+      "canonical_question": "What is the overall weighted score threshold for the Verified Certificate?",
+      "answer": "An overall weighted score of at least 60% is required to earn the Verified Certificate.",
+      "paraphrases": [
+        "What is the minimum overall score needed to pass?",
+        "What percentage do I need to get in total to pass the course?",
+        "What is the passing grade for the course?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold)"
+      ],
+      "topic": "Grading Policy",
+      "question_type": "eligibility",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "rejected",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "fabricated_or_incomplete_evidence",
+        "unsupported_source_attribution"
+      ],
+      "content_hash": "32532cac857734c5fd88864df83ff6f4667e0d33488ddd8ff4e3c0329d52fd56",
+      "review": {
+        "faq_id": "6a262ffd-15bb-5810-9cfe-6db1428a6b84",
+        "decision": "rejected",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "Rejected: the quotation omits the separate final-exam AND condition. Its valid threshold questions have been attached to the complete eligibility answer instead.",
+        "content_hash": "32532cac857734c5fd88864df83ff6f4667e0d33488ddd8ff4e3c0329d52fd56"
+      }
+    },
+    {
+      "faq_id": "e585c17e-d3a1-5d24-b741-21e437b5c59d",
+      "canonical_question": "What is the minimum score required on the Proctored Final Exam to pass the course?",
+      "answer": "Learners must score at least 40% on the Proctored Final Exam to be eligible for the Verified Certificate.",
+      "paraphrases": [
+        "What is the passing score for the final exam?",
+        "Is there a minimum score requirement for the final exam?",
+        "How much do I need to get on the final exam to pass?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "AND must score at least 40% in the Proctored Final Exam separately."
+      ],
+      "topic": "Grading Policy",
+      "question_type": "eligibility",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "rejected",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "fabricated_or_incomplete_evidence",
+        "unsupported_source_attribution"
+      ],
+      "content_hash": "3b3623f00399aad24b55f45b53e7dced95f86f4b9df80ec028d8c736aef7431c",
+      "review": {
+        "faq_id": "e585c17e-d3a1-5d24-b741-21e437b5c59d",
+        "decision": "rejected",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "Rejected: the quotation is a fragment and the answer omits the overall weighted requirement. Its valid generated questions now use the complete eligibility FAQ.",
+        "content_hash": "3b3623f00399aad24b55f45b53e7dced95f86f4b9df80ec028d8c736aef7431c"
+      }
+    },
+    {
+      "faq_id": "4c1a42f8-e17b-5676-a057-84eea6597e92",
+      "canonical_question": "What is the expected weekly time commitment for the DPM-101 course?",
+      "answer": "Students are expected to dedicate 4 to 5 hours per week to the DPM-101 course.",
+      "paraphrases": [
+        "How many hours per week should I plan to spend on the DPM-101 course?",
+        "What is the estimated weekly effort for the Digital Product Management (DPM-101) course?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:2"
+      ],
+      "evidence_quotes": [
+        "Expected Effort: 4 to 5 hours per week"
+      ],
+      "topic": "Course Structure",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:2",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "a6266a2fb3c7ec9af157c28dea15b9ae07aedc8e3637df4c2042af8a1f23717e",
+      "review": {
+        "faq_id": "4c1a42f8-e17b-5676-a057-84eea6597e92",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook states expected effort of 4 to 5 hours per week; DPM-101 is the verified course identifier, not an unsupported numeric threshold.",
+        "content_hash": "a6266a2fb3c7ec9af157c28dea15b9ae07aedc8e3637df4c2042af8a1f23717e"
+      }
+    },
+    {
+      "faq_id": "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+      "canonical_question": "What is the format of the final exam?",
+      "answer": "The final exam is conducted online and is AI-proctored, requiring a webcam and microphone.",
+      "paraphrases": [
+        "How will the final exam be administered?",
+        "Is the exam online or in-person?",
+        "What technology is used for proctoring the exam?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:1"
+      ],
+      "evidence_quotes": [
+        "Format: Online, AI-proctored via webcam and microphone."
+      ],
+      "topic": "Exam Format",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:1",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "771f843195f7d426ba2e2a4920feff3a6f9629b6317ed5f700b9e73d7d7bb5c9",
+      "review": {
+        "faq_id": "1a9b2095-dc1f-5bb0-be0c-10a3714aa84b",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The official exam format line states online AI proctoring via webcam and microphone. The filename citation was resolved only through its exact complete source line.",
+        "content_hash": "771f843195f7d426ba2e2a4920feff3a6f9629b6317ed5f700b9e73d7d7bb5c9"
+      }
+    },
+    {
+      "faq_id": "2f8acbee-477d-54dc-b669-097e49bda588",
+      "canonical_question": "What type of identification is required for the proctored final exam?",
+      "answer": "A valid government-issued photo ID, such as an Aadhaar card, Passport, Driving Licence, or PAN card, must be presented to the webcam before commencing the exam.",
+      "paraphrases": [
+        "Do I need to show ID for the exam?",
+        "What forms of identification are accepted for the final exam?",
+        "What ID should I have ready for the proctored exam?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:1"
+      ],
+      "evidence_quotes": [
+        "ID Requirement: A valid government photo ID (Aadhaar, Passport, Driving Licence, or PAN) must be shown to the webcam before starting."
+      ],
+      "topic": "Exam Requirements",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:1",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "2649f9c353d09189e6be82f2d2b9cf272ce01a98d73034a728d69653b94be9ba",
+      "review": {
+        "faq_id": "2f8acbee-477d-54dc-b669-097e49bda588",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The official exam ID rule lists a valid government photo ID and Aadhaar, Passport, Driving Licence or PAN before starting; the answer preserves the listed examples and timing.",
+        "content_hash": "2649f9c353d09189e6be82f2d2b9cf272ce01a98d73034a728d69653b94be9ba"
+      }
+    },
+    {
+      "faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+      "canonical_question": "What is the duration of the DPM-101 course?",
+      "answer": "The DPM-101 course is an 8-week online program.",
+      "paraphrases": [
+        "How long does the Digital Product Management (DPM-101) course last?",
+        "What is the total length of the DPM-101 course?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:1"
+      ],
+      "evidence_quotes": [
+        "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design."
+      ],
+      "topic": "Course Structure",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:1",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "9a3e435562e5752081d8e72349d8d8acd3751962099714deae6db38cc2e84696",
+      "review": {
+        "faq_id": "5252428f-b96e-5f76-a765-2f40bcbcc63a",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook overview explicitly describes DPM-101 as an 8-week online course; all duration paraphrases preserve this scope.",
+        "content_hash": "9a3e435562e5752081d8e72349d8d8acd3751962099714deae6db38cc2e84696"
+      }
+    },
+    {
+      "faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+      "canonical_question": "What is the cost of the Verified Certificate Track for DPM-101?",
+      "answer": "The Verified Certificate Track for the DPM-101 course costs Rs. 1,500.",
+      "paraphrases": [
+        "How much does the Verified Certificate Track for Digital Product Management (DPM-101) cost?",
+        "What is the fee for the paid track of the DPM-101 course?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Verified Certificate Track (Rs. 1,500): Full access to graded quizzes, capstone evaluation, the proctored final exam, and the official Verified Certificate upon passing."
+      ],
+      "topic": "Certificate Tracks",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "7a8acb2598c402bcd18c4e74e62e4970c3a3d100a5ef85e61b03c1d89c057b45",
+      "review": {
+        "faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook Verified Certificate Track line explicitly states Rs. 1,500. The answer and retained paraphrases ask about that track fee, not refund eligibility.",
+        "content_hash": "7a8acb2598c402bcd18c4e74e62e4970c3a3d100a5ef85e61b03c1d89c057b45"
+      }
+    },
+    {
+      "faq_id": "f3162ddd-d2f9-5640-8e9f-62a960669bda",
+      "canonical_question": "What are the benefits of the Audit Track in the DPM-101 course?",
+      "answer": "The Audit Track for DPM-101 is free and provides access to all lecture videos and reading material. However, it does not include graded assignments, the final exam, or a certificate.",
+      "paraphrases": [
+        "What do I get with the free Audit Track for Digital Product Management (DPM-101)?",
+        "Is the Audit Track for DPM-101 sufficient for learning without assignments or a certificate?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Audit Track (Free): Access to all lecture videos and reading material. Does not include graded assignments, the final exam, or a certificate."
+      ],
+      "topic": "Certificate Tracks",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "9b01040ea19ba67261132d37a272438acb4c5f06de92e6cdb9d7bb66f12ac1c5",
+      "review": {
+        "faq_id": "f3162ddd-d2f9-5640-8e9f-62a960669bda",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The Audit Track line grants free videos/readings and excludes graded assignments, the final exam and certificate; all three restrictions remain in the answer.",
+        "content_hash": "9b01040ea19ba67261132d37a272438acb4c5f06de92e6cdb9d7bb66f12ac1c5"
+      }
+    },
+    {
+      "faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+      "canonical_question": "Are late submissions accepted for weekly quizzes or the capstone case?",
+      "answer": "No, late submissions are no longer accepted for weekly quizzes or the capstone case. The previous 48-hour grace period with a penalty has been discontinued.",
+      "paraphrases": [
+        "Can I submit the capstone case late?",
+        "Is there a grace period for late quiz submissions?",
+        "What is the policy on late work?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:2"
+      ],
+      "evidence_quotes": [
+        "Late submissions are NO LONGER accepted for weekly quizzes or the capstone case. The earlier 48-hour grace window with a 10% penalty has been discontinued."
+      ],
+      "topic": "Late Submission Policy",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:2",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "9a485f6666a97ffcaf696b08403e2d9e8e49240d3e988324dd7b57a0c930bb8d",
+      "review": {
+        "faq_id": "5fa08d21-c200-5991-a785-074792b838aa",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The current v2 rule prohibits late weekly quizzes and capstone work and discontinues the previous grace window; no superseded allowance is treated as valid.",
+        "content_hash": "9a485f6666a97ffcaf696b08403e2d9e8e49240d3e988324dd7b57a0c930bb8d"
+      }
+    },
+    {
+      "faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+      "canonical_question": "What is the date and time for the official proctored final exam?",
+      "answer": "The official proctored final exam is scheduled for 20 November 2026, with available slots between 10:00 AM and 8:00 PM IST.",
+      "paraphrases": [
+        "When is the final exam?",
+        "What are the exam hours on November 20, 2026?",
+        "What is the date of the proctored exam?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:1"
+      ],
+      "evidence_quotes": [
+        "Exam Date: 20 November 2026 (Slots available between 10:00 AM and 8:00 PM IST)"
+      ],
+      "topic": "Exam Schedule",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:1",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "afc9f62ad5bd1e917a2cdbd2ebab5a522302fd6f44730649035b143d4ed1b135",
+      "review": {
+        "faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The official exam date line states 20 November 2026 and slots between 10:00 AM and 8:00 PM IST. No forum claim or December date is used.",
+        "content_hash": "afc9f62ad5bd1e917a2cdbd2ebab5a522302fd6f44730649035b143d4ed1b135"
+      }
+    },
+    {
+      "faq_id": "b09b5b2d-cf88-51be-b020-a46c7d2ab02d",
+      "canonical_question": "Can I get a certificate if I only use the Audit Track for DPM-101?",
+      "answer": "No, the Audit Track for DPM-101 does not include a certificate. To receive a certificate, you must enroll in the Verified Certificate Track.",
+      "paraphrases": [
+        "Is a certificate provided with the free Audit Track of Digital Product Management (DPM-101)?",
+        "Do I get a certificate if I complete the course using only the Audit Track?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Audit Track (Free): Access to all lecture videos and reading material. Does not include graded assignments, the final exam, or a certificate."
+      ],
+      "topic": "Certificate Tracks",
+      "question_type": "misunderstanding",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "d8ab4e2685457b49e6b2826bc1d550f5197300cc026e911ce42db9ba7842e793",
+      "review": {
+        "faq_id": "b09b5b2d-cf88-51be-b020-a46c7d2ab02d",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The Audit Track explicitly excludes a certificate, while the Verified Track provides one upon passing. The answer describes track eligibility without asserting payment alone guarantees certification.",
+        "content_hash": "d8ab4e2685457b49e6b2826bc1d550f5197300cc026e911ce42db9ba7842e793"
+      }
+    },
+    {
+      "faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+      "canonical_question": "What are the technical requirements for taking the proctored final exam?",
+      "answer": "To take the proctored final exam, you need a desktop or laptop computer equipped with a working webcam and microphone. The exam must be accessed using the latest version of the Chrome or Edge browser, and a stable internet connection with a minimum speed of 2 Mbps is required. Mobile phones and tablets are not supported for this exam.",
+      "paraphrases": [
+        "Can I take the exam on a tablet?",
+        "What internet speed do I need for the exam?",
+        "What browser should I use for the final exam?",
+        "Do I need a webcam and microphone for the exam?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:2"
+      ],
+      "evidence_quotes": [
+        "Desktop or laptop computer with a working webcam and microphone (mobile phones and tablets are not supported for taking the proctored exam).",
+        "Chrome or Edge browser (latest version) with stable internet (minimum 2 Mbps)."
+      ],
+      "topic": "Technical Requirements",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:2",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "6c0a7ebba8ba21a82f6c6cbcae698af2568121587dd322439eb5d29bc9610b3c",
+      "review": {
+        "faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "Both complete official technical lines establish desktop/laptop, webcam/microphone, Chrome/Edge, minimum 2 Mbps and unsupported phones/tablets. The answer preserves all constraints.",
+        "content_hash": "6c0a7ebba8ba21a82f6c6cbcae698af2568121587dd322439eb5d29bc9610b3c"
+      }
+    },
+    {
+      "faq_id": "03934813-2625-5319-ab5e-ed6bcb07bb68",
+      "canonical_question": "What was the previous passing threshold for the Verified Certificate?",
+      "answer": "The previous passing threshold for the Verified Certificate was 50%.",
+      "paraphrases": [
+        "Has the passing score changed?",
+        "What was the old passing grade?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold)"
+      ],
+      "topic": "Grading Policy",
+      "question_type": "comparison",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "rejected",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "fabricated_or_incomplete_evidence",
+        "unsupported_source_attribution"
+      ],
+      "content_hash": "b1050e0c82521b8e75c6b8a1ac2273bb95d217a80ed239843e3f0d2f4d5e0066",
+      "review": {
+        "faq_id": "03934813-2625-5319-ab5e-ed6bcb07bb68",
+        "decision": "rejected",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "Rejected: this is a historical-threshold question with an incomplete quotation, not an approved current-policy FAQ.",
+        "content_hash": "b1050e0c82521b8e75c6b8a1ac2273bb95d217a80ed239843e3f0d2f4d5e0066"
+      }
+    },
+    {
+      "faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+      "canonical_question": "How many weekly quizzes can be missed without penalty?",
+      "answer": "Since the best 5 out of 6 weekly quizzes are counted, learners can miss one weekly quiz without any penalty.",
+      "paraphrases": [
+        "What happens if I miss a weekly quiz?",
+        "Can I skip a quiz?",
+        "Is there a penalty for missing a quiz?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:2"
+      ],
+      "evidence_quotes": [
+        "Because the best 5 out of 6 weekly quizzes are counted, learners can miss 1 weekly quiz without penalty."
+      ],
+      "topic": "Weekly Quizzes",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:2",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "eb87e2720730c6bccaf5b4b6f03785da8a22d58ed98afebbc7fc056d88123c7a",
+      "review": {
+        "faq_id": "0006eea5-14c3-57ee-8d04-fe8b396ad3ef",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The current v2 quiz exception expressly counts the best five of six and permits missing one without penalty; the answer does not permit unlimited missed quizzes.",
+        "content_hash": "eb87e2720730c6bccaf5b4b6f03785da8a22d58ed98afebbc7fc056d88123c7a"
+      }
+    },
+    {
+      "faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+      "canonical_question": "What is the weighting of each assessment component?",
+      "answer": "Weekly Quizzes contribute 30% to the total score (with the best 5 out of 6 counted), the Capstone Product Case Submission is worth 30%, and the Proctored Final Exam accounts for 40% of the total score.",
+      "paraphrases": [
+        "How much is each part of the assessment worth?",
+        "What percentage does the final exam contribute to the overall grade?",
+        "What is the score breakdown for the course?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:3"
+      ],
+      "evidence_quotes": [
+        "Weekly Quizzes (6 quizzes, best 5 counted): 30% of total score",
+        "Capstone Product Case Submission: 30% of total score",
+        "Proctored Final Exam: 40% of total score"
+      ],
+      "topic": "Assessment Weights",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:3",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "5c0ec38bdb32149af8dd234d27d7c84b932a1d7ba2d9f096b776344f46292c62",
+      "review": {
+        "faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook assessment section supports quizzes 30%, capstone 30%, final exam 40%, and best five of six quizzes; final grade weighting is not confused with the separate exam passing threshold.",
+        "content_hash": "5c0ec38bdb32149af8dd234d27d7c84b932a1d7ba2d9f096b776344f46292c62"
+      }
+    },
+    {
+      "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+      "canonical_question": "What are the passing requirements for the Verified Certificate?",
+      "answer": "To receive the Verified Certificate, learners must achieve an overall weighted score of at least 60% and also score at least 40% on the Proctored Final Exam.",
+      "paraphrases": [
+        "What is the minimum overall score needed for the Verified Certificate?",
+        "What is the minimum score required on the final exam to pass?",
+        "What are the conditions for earning a Verified Certificate?",
+        "What is the overall weighted score threshold for the Verified Certificate?",
+        "What is the minimum overall score needed to pass?",
+        "What percentage do I need to get in total to pass the course?",
+        "What is the passing grade for the course?",
+        "What is the minimum score required on the Proctored Final Exam to pass the course?",
+        "What is the passing score for the final exam?",
+        "Is there a minimum score requirement for the final exam?",
+        "How much do I need to get on the final exam to pass?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:1"
+      ],
+      "evidence_quotes": [
+        "To earn the Verified Certificate, learners must achieve an overall weighted score of at least 60% (increased from the earlier 50% threshold), AND must score at least 40% in the Proctored Final Exam separately."
+      ],
+      "topic": "Grading Policy",
+      "question_type": "eligibility",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:1",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase",
+        "paraphrase_curation: Reused Gemini-generated overall/final threshold questions from rejected incomplete-answer entries; the complete Gemini answer here preserves both 60% overall AND 40% separate-final conditions."
+      ],
+      "content_hash": "5f70350b27add2f3e2a199f22a170d5af5d76fa096e8697188dadf52b75a00f4",
+      "review": {
+        "faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The full v2 certification line requires at least 60% overall AND at least 40% separately on the final exam. Both remain in the generated answer. Curated variants are Gemini-generated threshold questions answered by this same complete condition.",
+        "content_hash": "5f70350b27add2f3e2a199f22a170d5af5d76fa096e8697188dadf52b75a00f4"
+      }
+    },
+    {
+      "faq_id": "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+      "canonical_question": "What topics are covered in the DPM-101 course?",
+      "answer": "The DPM-101 course covers user research, product roadmapping, metrics, and AI feature design.",
+      "paraphrases": [
+        "What subjects are included in the Digital Product Management (DPM-101) curriculum?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:1"
+      ],
+      "evidence_quotes": [
+        "DPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design."
+      ],
+      "topic": "Course Content",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:1",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase",
+        "paraphrase_curation: Retained the curriculum paraphrase and removed learning-objectives wording, since the source enumerates topics rather than formal learning outcomes."
+      ],
+      "content_hash": "42f47a1ee37ee88c027d94adb9de09ff0acf488951986d4cc1326fa098d32b1b",
+      "review": {
+        "faq_id": "7d1c125f-5b5f-5f88-9b0d-2f09a71851cf",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook overview lists user research, product roadmapping, metrics and AI feature design. The unsupported formal-learning-objectives paraphrase was removed before review.",
+        "content_hash": "42f47a1ee37ee88c027d94adb9de09ff0acf488951986d4cc1326fa098d32b1b"
+      }
+    },
+    {
+      "faq_id": "051d8379-2490-5e68-9feb-360f8500bec4",
+      "canonical_question": "What is the deadline for upgrading from the Audit Track to the Verified Track for DPM-101?",
+      "answer": "You can upgrade from the Audit Track to the Verified Track for the DPM-101 course at any time until the end of Week 4.",
+      "paraphrases": [
+        "Until when can I switch from the free Audit Track to the paid Verified Track for DPM-101?",
+        "What is the last day to upgrade my DPM-101 enrollment to the Verified Certificate Track?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Upgrading from the Audit Track to the Verified Track is open until the end of Week 4."
+      ],
+      "topic": "Certificate Tracks",
+      "question_type": "deadline",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "72ba6cdf32bf920188195269b49cccb94cb592fa30b63402e342af1f36310456",
+      "review": {
+        "faq_id": "051d8379-2490-5e68-9feb-360f8500bec4",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook explicitly permits upgrading from Audit to Verified until the end of Week 4. The answer makes no unsupported conversion to a calendar date.",
+        "content_hash": "72ba6cdf32bf920188195269b49cccb94cb592fa30b63402e342af1f36310456"
+      }
+    },
+    {
+      "faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+      "canonical_question": "What is the deadline for the Capstone Product Case Submission?",
+      "answer": "The deadline for the Capstone Product Case has been extended by 5 days and is now 15 November 2026, 11:59 PM IST.",
+      "paraphrases": [
+        "When is the capstone case due?",
+        "What is the new deadline for the capstone submission?",
+        "Has the capstone deadline changed?"
+      ],
+      "source_ids": [
+        "03_grading_policy_v2.txt:3"
+      ],
+      "evidence_quotes": [
+        "The Capstone Product Case deadline has been extended by 5 days to 15 November 2026, 11:59 PM IST."
+      ],
+      "topic": "Capstone Deadline",
+      "question_type": "deadline",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "03_grading_policy_v2.txt:3",
+          "filename": "03_grading_policy_v2.txt",
+          "sha256": "8142eceae5080ca6f7736afa34f349483106e0fc75b5e81b3c897f17d48c81fc"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "025bfaaaa1396e53f75e21367a619dc9078be0275e0a97598dbc24bd7386093d",
+      "review": {
+        "faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "Current v2 extends the capstone deadline by five days to 15 November 2026 at 11:59 PM IST; the superseded November 10 deadline is not presented as current.",
+        "content_hash": "025bfaaaa1396e53f75e21367a619dc9078be0275e0a97598dbc24bd7386093d"
+      }
+    },
+    {
+      "faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+      "canonical_question": "What is the duration of the final exam?",
+      "answer": "The final exam is 90 minutes long.",
+      "paraphrases": [
+        "How long does the exam take?",
+        "What is the time limit for the final exam?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:1"
+      ],
+      "evidence_quotes": [
+        "Duration: 90 minutes"
+      ],
+      "topic": "Exam Format",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:1",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "0a92c219799c2be81e215cb97d3f4d2f323b25793d3c4a41136cf4cb098524f4",
+      "review": {
+        "faq_id": "cc0eeb13-5f1f-5872-8d20-108d5757d7e4",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The official exam duration line is 90 minutes; the answer and both paraphrases preserve exam rather than course duration.",
+        "content_hash": "0a92c219799c2be81e215cb97d3f4d2f323b25793d3c4a41136cf4cb098524f4"
+      }
+    },
+    {
+      "faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+      "canonical_question": "What materials are allowed during the closed-book final exam?",
+      "answer": "During the strictly closed-book final exam, learners are permitted to have only a blank sheet of rough paper and a basic physical calculator on their desk. No other materials like course notes, external websites, search engines, or AI tools are allowed.",
+      "paraphrases": [
+        "Can I use my notes during the exam?",
+        "What can I have with me during the exam?",
+        "Are search engines permitted in the exam?",
+        "Is the exam open-book or closed-book?"
+      ],
+      "source_ids": [
+        "04_exam_rules_and_faq.txt:1"
+      ],
+      "evidence_quotes": [
+        "Closed-Book Rule: The exam is strictly CLOSED-BOOK. Learners may NOT use course notes, external websites, search engines, or AI tools during the exam. Only a blank sheet of rough paper and a basic physical calculator are permitted on the desk."
+      ],
+      "topic": "Exam Rules",
+      "question_type": "conceptual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "04_exam_rules_and_faq.txt:1",
+          "filename": "04_exam_rules_and_faq.txt",
+          "sha256": "a4d4a614f819e7d3b62dc20bf48d51c19a2aad104f58677bb4ff59278071335a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "027060c18898821800c3b9184ac1b942ffd8d131b747d7cbf0ee1cb41ece4bad",
+      "review": {
+        "faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The complete closed-book rule permits only blank rough paper and a basic physical calculator and forbids notes, websites, search engines and AI tools. The answer preserves all prohibitions.",
+        "content_hash": "027060c18898821800c3b9184ac1b942ffd8d131b747d7cbf0ee1cb41ece4bad"
+      }
+    },
+    {
+      "faq_id": "e1d27d46-190c-5581-8096-582d32da53e3",
+      "canonical_question": "What is included in the Verified Certificate Track for DPM-101?",
+      "answer": "The Verified Certificate Track for DPM-101 costs Rs. 1,500 and includes full access to graded quizzes, capstone evaluation, the proctored final exam, and the official Verified Certificate upon passing.",
+      "paraphrases": [
+        "What are the features of the paid Verified Certificate Track for Digital Product Management (DPM-101)?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Verified Certificate Track (Rs. 1,500): Full access to graded quizzes, capstone evaluation, the proctored final exam, and the official Verified Certificate upon passing."
+      ],
+      "topic": "Certificate Tracks",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase",
+        "paraphrase_curation: Removed the certification-eligibility paraphrase because this answer describes track access, not the complete passing requirements."
+      ],
+      "content_hash": "10dd64b5f2635de91aa1615fa8ebdac3b0874b765ab974915ed4b0d9836713bf",
+      "review": {
+        "faq_id": "e1d27d46-190c-5581-8096-582d32da53e3",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook supports the Verified Track fee and listed assessment access, with certification only upon passing. The misleading eligibility paraphrase was removed; remaining wording concerns track features.",
+        "content_hash": "10dd64b5f2635de91aa1615fa8ebdac3b0874b765ab974915ed4b0d9836713bf"
+      }
+    },
+    {
+      "faq_id": "e665966d-599d-51cf-853c-995934a478f3",
+      "canonical_question": "What is the difference between the Audit Track and the Verified Certificate Track for DPM-101?",
+      "answer": "The Audit Track for DPM-101 is free and offers access to lecture videos and reading materials only. The Verified Certificate Track, costing Rs. 1,500, includes graded quizzes, a capstone evaluation, a proctored final exam, and a Verified Certificate upon successful completion.",
+      "paraphrases": [
+        "Compare the features and costs of the Audit Track versus the Verified Certificate Track for Digital Product Management (DPM-101).",
+        "What are the key distinctions between the free and paid options for the DPM-101 course?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Audit Track (Free): Access to all lecture videos and reading material. Does not include graded assignments, the final exam, or a certificate.",
+        "Verified Certificate Track (Rs. 1,500): Full access to graded quizzes, capstone evaluation, the proctored final exam, and the official Verified Certificate upon passing."
+      ],
+      "topic": "Certificate Tracks",
+      "question_type": "comparison",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "8e683ea0b10315dc04522d46e744b870b90453b2cc4da2fb3a46c251b14e5d54",
+      "review": {
+        "faq_id": "e665966d-599d-51cf-853c-995934a478f3",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The comparison preserves the Audit exclusions and the paid Verified Track inclusions and Rs. 1,500 fee; it does not imply the Audit Track includes assessment or a certificate.",
+        "content_hash": "8e683ea0b10315dc04522d46e744b870b90453b2cc4da2fb3a46c251b14e5d54"
+      }
+    },
+    {
+      "faq_id": "dbd03385-52d9-54f9-8375-ea1162c851b4",
+      "canonical_question": "How quickly do teaching assistants respond in the DPM-101 discussion forum?",
+      "answer": "Teaching assistants reply to queries in the DPM-101 discussion forum within 24 hours.",
+      "paraphrases": [
+        "What is the response time for teaching assistants in the DPM-101 course forum?",
+        "How long will I have to wait for a TA's response on the DPM-101 discussion board?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:2"
+      ],
+      "evidence_quotes": [
+        "Discussion Forum: Open 24/7. Teaching assistants reply within 24 hours."
+      ],
+      "topic": "Course Structure",
+      "question_type": "factual",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "approved",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:2",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "c71b6a1678e9760611e8833bc5aa845047d7868392ca798112538ef7cb326112",
+      "review": {
+        "faq_id": "dbd03385-52d9-54f9-8375-ea1162c851b4",
+        "decision": "approved",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "The handbook Discussion Forum line states teaching-assistant replies within 24 hours; the answer does not confuse response time with the forum being open 24/7.",
+        "content_hash": "c71b6a1678e9760611e8833bc5aa845047d7868392ca798112538ef7cb326112"
+      }
+    },
+    {
+      "faq_id": "af12c9e8-e09b-5de3-9279-9724054600e3",
+      "canonical_question": "What are the requirements to pass the DPM-101 course and obtain a Verified Certificate?",
+      "answer": "To obtain a Verified Certificate for DPM-101, you must pass the course, which includes completing graded quizzes, a capstone evaluation, and a proctored final exam.",
+      "paraphrases": [
+        "What criteria must be met to earn a Verified Certificate in Digital Product Management (DPM-101)?",
+        "How do I successfully complete the DPM-101 course to get certified?"
+      ],
+      "source_ids": [
+        "01_course_handbook.txt:4"
+      ],
+      "evidence_quotes": [
+        "Verified Certificate Track (Rs. 1,500): Full access to graded quizzes, capstone evaluation, the proctored final exam, and the official Verified Certificate upon passing."
+      ],
+      "topic": "Certificate Tracks",
+      "question_type": "eligibility",
+      "requires_context": false,
+      "knowledge_version": "5d6c1d3d77e4dd8d16d2f31fbdbcb024e706969d4210cd4f355715d58f482472",
+      "prompt_version": "faq-extraction-v1",
+      "verification_status": "rejected",
+      "source_references": [
+        {
+          "source_id": "01_course_handbook.txt:4",
+          "filename": "01_course_handbook.txt",
+          "sha256": "09b3b79418220508870261363bf880bd97115322a3a54b98f68cb1395ab5017a"
+        }
+      ],
+      "validation_notes": [
+        "review_question_answer_entailment_and_each_paraphrase"
+      ],
+      "content_hash": "067808f4ac93293e1166a5c91cdbe6eeca15d2ab2ac3dec46ff7ea7491bee3cf",
+      "review": {
+        "faq_id": "af12c9e8-e09b-5de3-9279-9724054600e3",
+        "decision": "rejected",
+        "reviewer": "Codex source review (AI agent, not human)",
+        "rationale": "Rejected: assessment access does not establish the complete certification passing criteria, and this answer omits the current 60% overall AND 40% separate final requirements.",
+        "content_hash": "067808f4ac93293e1166a5c91cdbe6eeca15d2ab2ac3dec46ff7ea7491bee3cf"
+      }
+    }
+  ]
+}

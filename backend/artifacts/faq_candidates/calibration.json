@@ -1,0 +1,97 @@
+[
+  {
+    "question": "What percentage do I need to pass DPM-101?",
+    "expected_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+    "category": "paraphrase"
+  },
+  {
+    "question": "How much do I need to score in the final examination?",
+    "expected_faq_id": "2bd29cdc-008d-5878-8dd5-770f2b1822f6",
+    "category": "scope"
+  },
+  {
+    "question": "When do I have to hand in the capstone case?",
+    "expected_faq_id": "92b98407-391e-5b71-82dd-b1d8cf9b242a",
+    "category": "paraphrase"
+  },
+  {
+    "question": "May I use Google in the final examination?",
+    "expected_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+    "category": "negation"
+  },
+  {
+    "question": "Can I sit the exam using an iPad?",
+    "expected_faq_id": "8150185c-7b3c-5b9d-b315-3a773ca52015",
+    "category": "scope"
+  },
+  {
+    "question": "How much is the verified certificate fee?",
+    "expected_faq_id": "f11ec004-d81b-599d-87b1-832073f1d5be",
+    "category": "paraphrase"
+  },
+  {
+    "question": "What is the weekly study effort for this course?",
+    "expected_faq_id": "4c1a42f8-e17b-5676-a057-84eea6597e92",
+    "category": "paraphrase"
+  },
+  {
+    "question": "What is the assessment weighting?",
+    "expected_faq_id": "704c1590-1b97-5edc-b9b3-199cbeef7e25",
+    "category": "paraphrase"
+  },
+  {
+    "question": "When is the final exam taking place?",
+    "expected_faq_id": "583eb62a-b28c-532a-9186-c1a061ca5674",
+    "category": "scope"
+  },
+  {
+    "question": "Can I use AI tools during the exam?",
+    "expected_faq_id": "c75d66f3-ca34-5315-8580-516f4f624533",
+    "category": "negation"
+  },
+  {
+    "question": "Can I pass with 70% overall and 35% in the final?",
+    "expected_faq_id": null,
+    "category": "conditional"
+  },
+  {
+    "question": "Can I pass with 70% overall and 45% in the final?",
+    "expected_faq_id": null,
+    "category": "conditional"
+  },
+  {
+    "question": "What was the passing score in January 2026?",
+    "expected_faq_id": null,
+    "category": "historical"
+  },
+  {
+    "question": "Do I not need to pass the final exam?",
+    "expected_faq_id": null,
+    "category": "negation"
+  },
+  {
+    "question": "What is the maximum final exam score?",
+    "expected_faq_id": null,
+    "category": "scope"
+  },
+  {
+    "question": "What is the refund policy?",
+    "expected_faq_id": null,
+    "category": "off_topic"
+  },
+  {
+    "question": "Who won the cricket match last night?",
+    "expected_faq_id": null,
+    "category": "off_topic"
+  },
+  {
+    "question": "Tell me about the course",
+    "expected_faq_id": null,
+    "category": "ambiguous"
+  },
+  {
+    "question": "What about the final exam?",
+    "expected_faq_id": null,
+    "category": "ambiguous"
+  }
+]
