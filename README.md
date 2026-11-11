@@ -1,5 +1,7 @@
 # DPM-101 Course Helpdesk
 
+**Live website:** https://dpm-101-helpdesk.onrender.com/
+
 [Deploy the complete app on Render](https://render.com/deploy?repo=https://github.com/Parth-73/HelpDesk-Bot) · [Hosting setup](DEPLOY.md)
 
 A React 19 frontend and Python 3.12/FastAPI backend answer questions using the supplied official course documents. PostgreSQL persists sessions, exchanges, response caches, request idempotency and live counters. Gemini selects evidence; the server only displays verified complete lines copied from authoritative passages. The original interface and institutional logo are preserved.
