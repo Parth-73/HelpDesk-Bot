@@ -97,7 +97,7 @@
     "Docker engine unavailable: image build not executed locally.",
     "Public deployment and hosted smoke tests pending Render connection.",
     "Mocked load uses identical questions in one process, not diverse real-provider traffic or 1,500 users.",
-    "AI session exports cover the available local logs, not every historical conversation.",
+    "AI session exports were limited to available local logs at the original audit; they are not included in the current repository following owner-requested removal.",
     "FAQ review was performed by an AI agent, not an independent human."
   ]
 }

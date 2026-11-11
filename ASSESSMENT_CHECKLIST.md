@@ -51,4 +51,4 @@ This verifies the measured readiness/database workload. It does **not** establis
 
 ## Submission materials
 
-The public app, GitHub code, README, implementation checklist and test reports are available. Existing AI session exports are JSON; the added Markdown work records are explicitly not full conversation exports. The owner should include actual client-exported `.md` conversations in `ai_sessions/` to satisfy the assessment's transcript-format requirement. This remaining submission-artifact step is separate from the functional implementation above.
+The public app, GitHub code, README, implementation checklist and test reports are available. AI session files were removed from the current repository at the owner's request. The assessment still requests actual client-exported Markdown conversations when AI tools are used; these can be supplied separately with the submission. This remaining submission-artifact step is separate from the functional implementation above.
