@@ -1,0 +1,50 @@
+{
+  "verification_date": "2026-11-11",
+  "url": "https://dpm-101-helpdesk.onrender.com/",
+  "provenance": "Recorded from actual public Render HTTP checks after deployment of f7c644d. This documentation update does not rerun the requests.",
+  "scope": "Selected real live checks; no claim that every failure scenario was exercised against the live provider.",
+  "readiness": {
+    "status": "ready",
+    "checks": {
+      "documents": true,
+      "database": true,
+      "gemini_configured": true
+    },
+    "faq_mode": "no_active_index"
+  },
+  "incomplete_question": {
+    "question": "what are the",
+    "response": {
+      "answer": "Which course item or assessment do you mean?",
+      "sources": [],
+      "cached": false,
+      "answer_path": "deterministic"
+    }
+  },
+  "compound_question": {
+    "question": "what is the deadine and syllabus",
+    "response": {
+      "answer": "The Capstone Product Case deadline has been extended by 5 days to 15 November 2026, 11:59 PM IST.\n\nDPM-101 is an 8-week online course covering user research, product roadmapping, metrics, and AI feature design.\n\nThese are the documented course topics; they do not establish a detailed examination syllabus or a study plan.",
+      "sources": [
+        "01_course_handbook.txt",
+        "03_grading_policy_v2.txt"
+      ],
+      "cached": false,
+      "answer_path": "deterministic"
+    }
+  },
+  "repeat_served_from_cache": true,
+  "live_gemini_question": {
+    "question": "What government photo ID is required for the exam?",
+    "response": {
+      "answer": "ID Requirement: A valid government photo ID (Aadhaar, Passport, Driving Licence, or PAN) must be shown to the webcam before starting.",
+      "sources": [
+        "04_exam_rules_and_faq.txt"
+      ],
+      "cached": false,
+      "answer_path": "gemini_rag"
+    }
+  },
+  "live_gemini_path_verified": true,
+  "privacy": "Session bearer identifiers are omitted; sample questions were generated for verification."
+}
